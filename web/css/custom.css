@@ -1,0 +1,36 @@
+.partners{
+    margin-top: 76px;
+}
+
+.partners img{
+    width:20%
+}
+
+.btn-text{
+    background: #422F59;
+    border-radius: 8px;
+    padding:10px;
+    width:30%;
+    color:white;
+    text-align: center;
+}
+.btn-text2{
+    background: #422F59;
+    border-radius: 8px;
+    padding:10px;
+    width:45%;
+    color:white;
+    text-align: center;
+}
+
+.value_list{
+    color:#FF800B;
+}
+
+.value_list p{
+    color:#422F59;
+}
+
+.value-prop{
+    padding: 5px;
+}
