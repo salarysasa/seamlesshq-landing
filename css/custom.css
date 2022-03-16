@@ -1,9 +1,32 @@
 .partners{
-    margin-top: 76px;
+    margin-top: 10rem;
 }
 
 .partners img{
-    width:20%
+    width:15%;
+    height: 45px;
+}
+.partners .img2{
+    width: 300px;
+	height: 35px;
+}
+
+@media (max-width: 768px) {
+    .partners{
+        margin-top: 5rem;
+        text-align: center;
+    }
+    .partners img{
+        width:60%;
+        height: 45px;
+        margin-bottom: 10px;
+    }
+    .partners .img2{
+        width: 300px;
+        height: 35px;
+        margin-bottom: 10px;
+
+    }
 }
 
 .btn-text{
@@ -32,7 +55,7 @@
 }
 
 .value-prop{
-    padding: 5px;
+    padding: 25px;
 }
 
 .blog_heading{
