@@ -349,8 +349,8 @@ a:hover {
 }
 
 .navbar .logo-image img {
-    width: 192px;
-	height: 45px;
+    width: 172px;
+	height: 40px;
 }
 
 .navbar .logo-text {
@@ -421,7 +421,7 @@ a:hover {
 	margin-top: 0.25rem;
 	margin-bottom: 0.25rem;
 	border: none;
-	background-color: #fff2dc;
+	background-color: #fff;
 }
 
 .navbar .dropdown-item {
@@ -518,7 +518,7 @@ a:hover {
 
 .cards-1 .card-icon {
 	width: 76px;
-	height: 76px;
+	height: 62px;
 	margin-right: auto;
 	margin-bottom: 2.5rem;
 	margin-left: auto;
@@ -748,8 +748,8 @@ a:hover {
 	text-align: center;
 }
 .community {
-	padding-top: 9rem;
-	padding-bottom: 9rem;
+	padding-top: 4rem;
+	padding-bottom: 3rem;
 	background-color: #F1E5FF;
 	text-align: center;
 }
@@ -764,14 +764,24 @@ a:hover {
 }
 
 .community h3{
-	margin-bottom: 2.375rem;
+	margin-bottom: 1.375rem;
 	color: #422F59;
+	font-weight: 400;
+	font-size: 3em;
+	line-height: 1;
+}
+
+@media (max-width: 428px) {
+	.community h3{
+		font-size: 2.2em;
+	}
 }
 
 .basic-3 .btn-outline-lg {
 	color: #ffffff;
 	background: #FF800B;
-	border-radius: 3px;
+	border-radius: 5px;
+	text-transform: uppercase;
 	
 }
 
@@ -780,14 +790,14 @@ a:hover {
 	box-sizing: border-box;
 	padding: 12px;
 	width: 25%;
+	border-radius: 5px;
 }
 
 .community .btn-outline-lg {
 	color: #ffffff;
 	background: #FF800B;
-	border-radius: 3px;
-	
-
+	border-radius:5px;
+	font-weight: 400;
 }
 
 .basic-3 .btn-outline-lg:hover {
@@ -1166,8 +1176,8 @@ a:hover {
 
 	/* Navigation */
 	.navbar {
-		padding-top: 1.75rem;
-		padding-bottom: 1.75rem;
+		padding-top: 0.75rem;
+		padding-bottom: 0.75rem;
 		background-color: #ffffff;
 		box-shadow: none;
 		transition: all 0.2s;
@@ -1431,7 +1441,7 @@ a:hover {
 	/* Header */
 	.header {
 		overflow: hidden;
-		padding-top: 13.5rem;
+		padding-top: 9.7rem;
 	}
 
 	.header .image-container {
@@ -1441,7 +1451,7 @@ a:hover {
 	.header .image-container img {
 		position: absolute;
 		left: -10px;
-		width: 720px;
+		width: 617px;
 		max-width: none;
 	}
 	/* end of header */
@@ -1449,7 +1459,7 @@ a:hover {
 
 	/* Features */
 	.cards-1 .card {
-		height: 264px;
+		height: 213px;
 	}
 	
 	/* .cards-1 .card:nth-of-type(3n+2) {
@@ -1462,6 +1472,11 @@ a:hover {
 	/* Details 1 */
 	.basic-1 .text-container {
 		margin-top: 0rem;
+	}
+
+	.blog_main{
+		margin-top: 0rem;
+		margin: 0 5em;
 	}
 
 	.basic-1 h2 {

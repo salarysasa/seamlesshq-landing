@@ -1,44 +1,43 @@
 .partners{
-    margin-top: 10rem;
+    margin-top: 7rem;
 }
 
 .partners img{
-    width:15%;
-    height: 45px;
+    width:12%;
+    height: 30px;
+    margin-right: 25px;
 }
 .partners .img2{
-    width: 300px;
-	height: 35px;
+    width: 285px;
+	height: 25px;
+}
+.partners .img3{
+    width: 265px;
+	height: 25px;
 }
 .phone_img{
     width:90%
 }
 
-@media (min-width: 1200px) {
-    .develop_text{
-        margin-top:4rem
-    }
-    .develop_text2{
-        margin-top:7rem
-    }
+.links{
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 1px;
 }
 
-@media (max-width: 428px) {
-    .partners{
-        margin-top: 5rem;
-        text-align: center;
-    }
-    .partners img{
-        width:60%;
-        height: 45px;
-        margin-bottom: 10px;
-    }
-    .partners .img2{
-        width: 300px;
-        height: 35px;
-        margin-bottom: 10px;
+.hero_header{
+    font-weight: 400;
+    color:#422F59
+}
 
-    }
+.section_header{
+    font-weight: 400;
+    color:#422F59
+}
+
+.develop_text{
+    font-weight: 400;
+    text-align: left;
 }
 
 .btn-text{
@@ -58,6 +57,73 @@
     text-align: center;
 }
 
+.blog, .subscription{
+    padding-top: 5em;
+}
+
+.subscription p{
+    margin-top: 1em;
+}
+
+
+
+@media (min-width: 1200px) {
+    .develop_text{
+        margin-top:4rem;
+    }
+    .develop_text2{
+        margin-top:7rem
+    }
+    .community_container{
+        max-width: 520px;
+        margin: auto;
+    }
+    .blog{
+        max-width: 1150px;
+        margin: auto;
+    }
+    .border-right{
+        border-right: 1px solid #333;
+    }
+    .subscribe, .faq{
+        font-size: 3em;
+        font-weight: 400;
+    }
+}
+
+@media (max-width: 428px) {
+    .partners{
+        margin-top: 5rem;
+        text-align: center;
+    }
+    .partners img{
+        width:45%;
+        height: 36px;
+        margin-bottom: 10px;
+    }
+    .partners .img2{
+        width: 271px;
+        height: 24px;
+        margin-bottom: 10px;
+    }
+    .partners .img3{
+        width: 245px;
+        height: 24px;
+        margin-bottom: 10px;
+    }
+    .develop_text{
+        text-align: center;
+    }
+    .btn-text2, .btn-text{
+        width:100%
+    }
+    .basic-1{
+        padding-bottom: 1rem;
+    }
+}
+
+
+
 .value_list{
     color:#FF800B;
 }
@@ -72,6 +138,14 @@
 
 .blog_heading{
     margin-top: 15px;
+    font-weight: 400;
+    font-size: 30px;
+    margin-bottom: 0.7rem;
+    line-height: 1.3;
+}
+
+.blog_desc{
+    font-size: 14px;
 }
 
 .blog_link{
@@ -79,5 +153,6 @@
 }
 
 .blog_category{
-    color:#FF800B
+    color:#FF800B;
+    font-size: 14px;
 }
