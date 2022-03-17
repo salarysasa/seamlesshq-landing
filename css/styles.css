@@ -903,7 +903,7 @@ a:hover {
 /*********************/
 .accordion-1 {
 	padding-top: 4rem;
-	padding-bottom: 9rem;
+	padding-bottom: 5rem;
 }
 
 .accordion-1 .h2-heading {
@@ -1386,7 +1386,6 @@ a:hover {
 	.footer .footer-col.second {
 		display: inline-block;
 		width: 220px;
-		margin-right: 1.75rem;
 		vertical-align: top;
 	}
 	
@@ -1542,9 +1541,7 @@ a:hover {
 		margin-right: 6rem;
 	}
 	
-	.footer .footer-col.second {
-		margin-right: 6.5rem;
-	}
+	
 	
 	.footer .footer-col.third {
 		text-align: left;

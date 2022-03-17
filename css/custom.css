@@ -65,7 +65,16 @@
     margin-top: 1em;
 }
 
+.socials{
+    text-align: center;
+}
 
+.line{
+    color:white
+}
+.mobile{
+    display: none;
+}
 
 @media (min-width: 1200px) {
     .develop_text{
@@ -89,6 +98,9 @@
         font-size: 3em;
         font-weight: 400;
     }
+    .mobile{
+        display: none;
+    }
 }
 
 @media (max-width: 428px) {
@@ -99,12 +111,26 @@
     .partners img{
         width:45%;
         height: 36px;
-        margin-bottom: 10px;
+        margin:0 auto;
     }
+    .header{
+        padding-bottom: 4em;
+    }
+    .cards-1{
+        padding-top: 5em;
+    }
+    .desktop{
+        display: none;
+    }
+    .mobile{
+        display: block;
+    }
+    
     .partners .img2{
         width: 271px;
         height: 24px;
-        margin-bottom: 10px;
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
     .partners .img3{
         width: 245px;
@@ -119,6 +145,9 @@
     }
     .basic-1{
         padding-bottom: 1rem;
+    }
+    .footer_txt{
+        text-align: center;
     }
 }
 
