@@ -112,6 +112,10 @@
         width:45%;
         height: 36px;
         margin:0 auto;
+        cursor:pointer;
+    }
+    .img_link{
+        cursor: pointer;
     }
     .header{
         padding-bottom: 4em;
