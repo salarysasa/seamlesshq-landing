@@ -30,6 +30,7 @@
         <link href="css/swiper.css" rel="stylesheet">
         <link href="css/styles.css" rel="stylesheet">
         <link href="css/custom.css" rel="stylesheet">
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
         
         <!-- Favicon  -->
         <link rel="icon" href="images/favicon.png">
@@ -348,11 +349,16 @@
                     <div class="col-lg-12">
                         <h4 class="subscribe">Receive updates in your inbox</h4>
                         <p>Subscribe to our newsletter</p>
-                        <form>
-                            <input placeholder="Name">
-                            <input placeholder="Email Address">
-                            <a class="btn-outline-lg page-scroll" href="sign-up.html">Subscribe</a>
+                        <form id="subscription_form">
+                            <input placeholder="Name" id="Name" name="Name">
+                            <input placeholder="Email Address" id="EmailAddress" name="EmailAddress">
+                            <button class="btn-outline-lg page-scroll"  type="submit">
+                                <span id="button_submit">Subscribe</span>
+                                <div id="first_loader" class="first-loader"></div>
+                            </button>
+                            
                         </form>
+                        <h4 id="submitted">Your details were submitted successfully, you have been added to our list!!!</h4>
                     </div> <!-- end of col -->
                 </div> <!-- end of row -->
             </div> <!-- end of container -->
@@ -511,6 +517,35 @@
         <!-- end of back to top button -->
             
         <!-- Scripts -->
+        <script>
+            var thisform = document.getElementById("subscription_form");
+
+            const headers_ = {
+                'Authorization': 'Bearer keyeRW28wn6OUUZ1M',
+                'Content-Type': 'application/json'
+            };
+
+            // When the form is submitted...
+            thisform.addEventListener("submit", function(event) {
+                document.getElementById('button_submit').style.display = 'none';
+                document.getElementById('first_loader').style.display = 'block';
+                event.preventDefault();
+
+                // POST the data
+                axios.post("https://api.airtable.com/v0/app2H52gozfxotnm9/Subscribers",
+                    {
+                        "fields": {
+                            "Name": document.getElementById("Name").value,
+                            "EmailAddress": document.getElementById("EmailAddress").value
+                        }
+                    }, {headers: headers_}
+                )
+                .then((resp) => {
+                    document.getElementById('subscription_form').style.display = 'none';
+                    document.getElementById('submitted').style.display = 'block';
+                });
+            });
+        </script>
         <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
         <script src="js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
         <script src="js/purecounter.min.js"></script> <!-- Purecounter counter for statistics numbers -->
