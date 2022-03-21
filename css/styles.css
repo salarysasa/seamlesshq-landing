@@ -440,6 +440,11 @@ a:hover {
 	color: #f25c05;
 }
 
+.navbar .dropdown-item.active {
+	background-color: #fff2dc;
+	color: #f25c05;
+}
+
 .navbar .dropdown-divider {
 	width: 100%;
 	height: 1px;
