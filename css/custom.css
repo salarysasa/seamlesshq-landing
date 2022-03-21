@@ -201,6 +201,22 @@
     .mobile{
         display: block;
     }
+    .basic-1 .text-container {
+        margin-bottom: 4rem;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .cards-1 .card {
+        margin-bottom: 2rem;
+        margin-right:30px;
+        border: 1px solid #C6B5DB;
+        background-color: transparent;
+    }
+
+    h2{
+        font-size: 28px;
+    }
     
     .partners .img2{
         width: 271px;

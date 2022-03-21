@@ -561,6 +561,8 @@ a:hover {
 
 .basic-1 .text-container {
 	margin-bottom: 4rem;
+	padding-left: 15px;
+	padding-right: 15px;
 }
 
 .basic-1 h2 {
