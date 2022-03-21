@@ -177,6 +177,7 @@ a:hover {
 	background-color: transparent;
 	color: #272556; /* needs to stay here because of the color property of a tag */
 	text-decoration: none;
+	border: 1px solid #FF800B;;
 }
 
 .btn-solid-sm {
@@ -465,8 +466,8 @@ a:hover {
 	text-align: center;
 }
 
-.header .h1-large {
-	margin-bottom: 1.25rem;
+.header .head {
+	margin-bottom: 1.5rem;
 }
 
 .header .replace-me {
@@ -1450,7 +1451,8 @@ a:hover {
 	.header .image-container img {
 		position: absolute;
 		left: -10px;
-		width: 617px;
+		width: 578px;
+		margin-top: -55px;
 		max-width: none;
 	}
 	/* end of header */
