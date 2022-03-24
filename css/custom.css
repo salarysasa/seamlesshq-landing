@@ -61,6 +61,7 @@
     width: 100%;
     animation: typing 3.3s steps(60, end);
     margin-bottom: 0;
+    display:block;
 }
 
 .hero_header:nth-child(2){
