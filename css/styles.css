@@ -234,6 +234,19 @@ a:hover {
 	transition: all 0.2s;
 }
 
+.btn-outline-header {
+	display: inline-block;
+	padding: 1.2rem 1.625rem 1.2rem 1.625rem;
+	border-radius: 5px;
+	background-color: #f25c05;
+	color: #fff;
+	font-weight: 600;
+	font-size: 0.875rem;
+	line-height: 0;
+	text-decoration: none;
+	transition: all 0.2s;
+}
+
 .btn-outline-lg:hover {
 	background-color: #565578;
 	color: #ffffff;
