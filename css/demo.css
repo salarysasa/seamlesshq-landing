@@ -18,7 +18,7 @@ p{
     margin-bottom:0px!important;
 }
 
-#not_submitted{
+#not_submitted, #demo_success{
     display: none;
 }
 
