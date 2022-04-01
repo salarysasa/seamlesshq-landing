@@ -18,10 +18,6 @@ p{
     margin-bottom:0px!important;
 }
 
-#not_submitted, #demo_success{
-    display: none;
-}
-
 .demo{
     padding-top:9rem;
     background-color: transparent;

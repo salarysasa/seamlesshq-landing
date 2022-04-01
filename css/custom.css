@@ -44,7 +44,7 @@
   }
 
 #submitted{
-    display: none;
+    display: block;
 }
 
 .links{

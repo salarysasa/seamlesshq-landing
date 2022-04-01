@@ -19,7 +19,7 @@
         <meta name="twitter:card" content="summary_large_image"> <!-- to have large image post format in Twitter -->
 
         <!-- Webpage Title -->
-        <title>Request demo | SeamlessHQ</title>
+        <title>Request submitted | SeamlessHQ</title>
         
         <!-- Styles -->
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
@@ -116,41 +116,10 @@
             <div class="container">
                 <div class="row row_card">
                     <div class="col-lg-12 demo_card">
-                        <h1 class="subscribe header_text" id="header_msg">Request for a demo</h1>
-                        <p id="header_paragraph" class="header_p">Thank you for expressing interest in our HR platform.<br>
-                            Fill in your information and we will schedule a demo call.</p>
-                        <form id="subscription_form">
-                            <input placeholder="Full Name" id="Name" name="Name" required>
-                            <input placeholder="What company do you work for?" id="Company" name="Company" required><br/>
-                            <input placeholder="What is your current title?" id="Title" name="Title" required><br/>
-                            <div class="modules">
-                                <p>What modules are you looking for? Select all relevant ones</p>
-                                <input type="checkbox"  class="check"  id="payroll" name="modules" value=" Payroll management">
-                                <label for="payroll">Payroll management</label><br>
-                                <input type="checkbox" class="check" id="performance" name="modules" value="Performance management">
-                                <label for="performance"> Performance management</label><br>
-                                <input type="checkbox" class="check"  id="lnd" name="modules" value="Learning and Development">
-                                <label for="lnd"> Learning and Development</label><br>
-                                <input type="checkbox" class="check"  id="analytics" name="modules" value="HR Analytics">
-                                <label for="analytics"> HR Analytics</label><br>
-                                <input type="checkbox" class="check"  id="onboarding" name="modules" value="Onboarding">
-                                <label for="vehicle3"> Onboarding</label><br>
-                                <input type="checkbox" class="check"  id="contract" name="modules" value="Contract management">
-                                <label for="vehicle3"> Contract management</label><br>
-                                <input type="checkbox" class="check"  id="compliance" name="modules" value="Compliance Documents">
-                                <label for="vehicle3"> Compliance Documents</label><br>
-                                <input type="checkbox" class="check"  id="other" name="modules" value="Other">
-                                <label for="vehicle3"> Other</label><br>
-                            </div>                          
-                            <input placeholder="Your Work Email Address" id="EmailAddress" name="EmailAddress" required>
-                            <input type="tel" placeholder="Phone Number" id="PhoneNumber" name="PhoneNumber"><br>
-                            <button class="btn-outline-lg page-scroll"  type="submit">
-                                <span id="button_submit">Submit</span>
-                                <div id="first_loader" class="first-loader"></div>
-                            </button>
-                            
-                        </form>
-                        
+                        <h1 class="subscribe header_text" id="demo_success">Demo request submitted successfully</h1>
+                        <p id="submitted">Your details were submitted successfully. <br> 
+                            One of our team members will reach out to you in a few hours to schedule a call. <br><br>
+                            In the meantime, <a href="https://blog.seamlesshq.co">check out our Blog</a> where we talk about fun, educational and even personal HR-related topics.</p>
                     </div> <!-- end of col -->
                 </div> <!-- end of row -->
             </div> <!-- end of container -->
@@ -218,53 +187,6 @@
         <!-- end of back to top button -->
             
         <!-- Scripts -->
-        <script>
-            var thisform = document.getElementById("subscription_form");
-
-            const headers_ = {
-                'Authorization': 'Bearer keyXKQV5un7HrZTbW',
-                'Content-Type': 'application/json'
-            };
-
-            // When the form is submitted...
-            thisform.addEventListener("submit", function(event) {
-                document.getElementById('button_submit').style.display = 'none';
-                document.getElementById('first_loader').style.display = 'block';
-                var checkboxes = document.getElementsByName('modules');
-                // check all submitted modules
-                var modules = " ";
-                for (var i=0, n=checkboxes.length;i<n;i++) 
-                {
-                    if (checkboxes[i].checked) 
-                    {
-                        modules += checkboxes[i].value+", ";
-                    }
-                }
-                if (modules) modules = modules.substring(1);
-
-                event.preventDefault();
-
-                // POST the data
-                axios.post("https://api.airtable.com/v0/appolPw2eM5Aeo1MB/Demo%20Request",
-                    {
-                        "fields": {
-                            "Name": document.getElementById("Name").value,
-                            "Email Address": document.getElementById("EmailAddress").value,
-                            "Company": document.getElementById("Company").value,
-                            "Phone Number": document.getElementById("PhoneNumber").value,
-                            "Title": document.getElementById("Title").value,
-                            "Modules": modules,
-                        }
-                    }, {headers: headers_}
-                )
-                .then((resp) => {
-                    window.location.href = 'request-submitted-successfully.html';
-                }).catch(function (error) {
-                    document.getElementById('subscription_form').style.display = 'none';
-                    document.getElementById('not_submitted').style.display = 'block';
-                })});
-            
-        </script>
         <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
         <script src="js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
         <script src="js/purecounter.min.js"></script> <!-- Purecounter counter for statistics numbers -->
