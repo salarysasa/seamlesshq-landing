@@ -19,7 +19,7 @@
         <meta name="twitter:card" content="summary_large_image"> <!-- to have large image post format in Twitter -->
 
         <!-- Webpage Title -->
-        <title>Request submitted | SeamlessHQ</title>
+        <title>Invest | SeamlessHQ</title>
         
         <!-- Styles -->
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
@@ -102,7 +102,7 @@
                             <a class="nav-link links" target="_blank" href="https://blog.seamlesshq.co">Blogs</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link links" target="_blank" href="invest.html">Invest</a>
+                            <a class="nav-link links" href="#">Invest</a>
                         </li>
                         <li class="nav-item">
                             <a class="btn-outline-header page-scroll" target="_blank" href="https://app.seamlesshq.co/login">Login</a>
@@ -119,10 +119,22 @@
             <div class="container">
                 <div class="row row_card">
                     <div class="col-lg-12 demo_card">
-                        <h1 class="subscribe header_text" id="demo_success">Demo request submitted successfully</h1>
-                        <p id="submitted">Your details were submitted successfully. <br> 
-                            One of our team members will reach out to you in a few hours to schedule a call. <br><br>
-                            In the meantime, <a href="https://blog.seamlesshq.co">check out our Blog</a> where we talk about fun, educational and even personal HR-related topics.</p>
+                        <h1 class="subscribe header_text" id="header_msg">Invest in SeamlessHQ</h1>
+                        <p id="header_paragraph" class="header_p">If you’d love to take part in the next growth of SeamlessHQ, <br>
+                            please fill in your information and we will get back to you.</p>
+                        <form id="subscription_form">
+                            <input placeholder="Full Name" id="Name" name="Name" required>
+                            <input placeholder="What company do you work for?" id="Company" name="Company" required><br/>
+                            <input placeholder="What is your current title?" id="Title" name="Title" required><br/>
+                            <input placeholder="Your Work Email Address" id="EmailAddress" name="EmailAddress" required>
+                            <input type="tel" placeholder="Phone Number" id="PhoneNumber" name="PhoneNumber"><br>
+                            <button class="btn-outline-lg page-scroll"  type="submit">
+                                <span id="button_submit">Submit</span>
+                                <div id="first_loader" class="first-loader"></div>
+                            </button>
+                            
+                        </form>
+                        
                     </div> <!-- end of col -->
                 </div> <!-- end of row -->
             </div> <!-- end of container -->
@@ -190,6 +202,52 @@
         <!-- end of back to top button -->
             
         <!-- Scripts -->
+        <script>
+            var thisform = document.getElementById("subscription_form");
+
+            const headers_ = {
+                'Authorization': 'Bearer keyXKQV5un7HrZTbW',
+                'Content-Type': 'application/json'
+            };
+
+            // When the form is submitted...
+            thisform.addEventListener("submit", function(event) {
+                document.getElementById('button_submit').style.display = 'none';
+                document.getElementById('first_loader').style.display = 'block';
+                var checkboxes = document.getElementsByName('modules');
+                // check all submitted modules
+                var modules = " ";
+                for (var i=0, n=checkboxes.length;i<n;i++) 
+                {
+                    if (checkboxes[i].checked) 
+                    {
+                        modules += checkboxes[i].value+", ";
+                    }
+                }
+                if (modules) modules = modules.substring(1);
+
+                event.preventDefault();
+
+                // POST the data
+                axios.post("https://api.airtable.com/v0/appolPw2eM5Aeo1MB/Invest%20Signups",
+                    {
+                        "fields": {
+                            "Name": document.getElementById("Name").value,
+                            "Email Address": document.getElementById("EmailAddress").value,
+                            "Company": document.getElementById("Company").value,
+                            "Phone Number": document.getElementById("PhoneNumber").value,
+                            "Title": document.getElementById("Title").value,
+                        }
+                    }, {headers: headers_}
+                )
+                .then((resp) => {
+                    window.location.href = 'invest-record-submitted-successfully.html';
+                }).catch(function (error) {
+                    document.getElementById('subscription_form').style.display = 'none';
+                    document.getElementById('not_submitted').style.display = 'block';
+                })});
+            
+        </script>
         <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
         <script src="js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
         <script src="js/purecounter.min.js"></script> <!-- Purecounter counter for statistics numbers -->
