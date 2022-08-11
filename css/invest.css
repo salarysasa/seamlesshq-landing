@@ -1,0 +1,13 @@
+.invest_header{
+    font-weight: 400;
+    color:#422F59;
+    width: 100%;
+    margin-bottom: 0;
+    display:block;
+    padding-top: 40px;
+}
+
+.descr{
+    margin-top: 15px;
+    margin-bottom: 15px!important;
+}
