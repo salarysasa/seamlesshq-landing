@@ -245,6 +245,20 @@ a:hover {
 	line-height: 0;
 	text-decoration: none;
 	transition: all 0.2s;
+	
+}
+.btn-outline-header-invest {
+	display: inline-block;
+	padding: 1.2rem 1.625rem 1.2rem 1.625rem;
+	border-radius: 5px;
+	background-color:#422F59;;
+	color: #fff;
+	font-weight: 600;
+	font-size: 0.875rem;
+	line-height: 0;
+	text-decoration: none;
+	transition: all 0.2s;
+	margin-right: 5px;
 }
 
 .btn-outline-lg:hover {
