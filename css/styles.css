@@ -1599,3 +1599,14 @@ a:hover {
 	/* end of extra pages */
 }
 /* end of min-width 1200px */
+
+
+.invest-bt{
+	background-color: #c6e649 !important; 
+}
+.invest-bt:hover {
+	background-color: transparent;
+	color: #272556; /* needs to stay here because of the color property of a tag */
+	text-decoration: none;
+	border: 1px solid  #c6e649;
+}
