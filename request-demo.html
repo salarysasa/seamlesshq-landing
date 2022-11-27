@@ -145,6 +145,8 @@
                             <input placeholder="Full Name" id="Name" name="Name" required>
                             <input placeholder="What company do you work for?" id="Company" name="Company" required><br/>
                             <input placeholder="What is your current title?" id="Title" name="Title" required><br/>
+                            <input placeholder="Your Work Email Address" id="EmailAddress" name="EmailAddress" required>
+                            <input type="tel" placeholder="Phone Number" id="PhoneNumber" name="PhoneNumber"><br>
                             <div class="modules">
                                 <p>What modules are you looking for? Select all relevant ones</p>
                                 <input type="checkbox"  class="check"  id="payroll" name="modules" value=" Payroll management">
@@ -164,8 +166,28 @@
                                 <input type="checkbox" class="check"  id="other" name="modules" value="Other">
                                 <label for="vehicle3"> Other</label><br>
                             </div>                          
-                            <input placeholder="Your Work Email Address" id="EmailAddress" name="EmailAddress" required>
-                            <input type="tel" placeholder="Phone Number" id="PhoneNumber" name="PhoneNumber"><br>
+                            <div class="modules">
+                                <p>Where did you learn about us?</p>
+                                <input type="checkbox"  class="check"  id="payroll" name="modules" value="Social Media ( LinkedIn, Twitter, Facebook, Instagram)">
+                                <label for="payroll">Social Media ( LinkedIn, Twitter, Facebook, Instagram)</label><br>
+                                <input type="checkbox" class="check" id="performance" name="modules" value="ElevateHR Website">
+                                <label for="performance">ElevateHR Website</label><br>
+                                <input type="checkbox" class="check"  id="lnd" name="modules" value="ElevateHR Slack Community">
+                                <label for="lnd">ElevateHR Slack Community</label><br>
+                                <input type="checkbox" class="check"  id="analytics" name="modules" value="Email Campaign">
+                                <label for="analytics">Email Campaign</label><br>
+                                <input type="checkbox" class="check"  id="onboarding" name="modules" value="Google Search">
+                                <label for="vehicle3"> Google Search</label><br>
+                                <input type="checkbox" class="check"  id="contract" name="modules" value="Online event (Webinar/Training)">
+                                <label for="vehicle3">Online event (Webinar/Training)</label><br>
+                                <input type="checkbox" class="check"  id="compliance" name="modules" value="Physical Event">
+                                <label for="vehicle3"> Physical Event</label><br>
+                                <input type="checkbox" class="check"  id="compliance" name="modules" value="Referral">
+                                <label for="vehicle3">Referral</label><br>
+                                <input type="checkbox" class="check"  id="other" name="modules" value="Other">
+                                <label for="vehicle3"> Other</label><br>
+                            </div>   
+                            <input placeholder="Specify" id="Company" name="Specify" required><br/>   
                             <button class="btn-outline-lg page-scroll"  type="submit">
                                 <span id="button_submit">Submit</span>
                                 <div id="first_loader" class="first-loader"></div>

@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>ElevateHR: a cloud Based HR Platform</title>
+<meta name="title" content="Cloud-based HR platform for the African market - ElevateHR">
+<meta name="description" content="ElevateHR; a cloud Based HR Platform that helps you to automate payroll management, leave management, onboarding and other often time-consuming HR tasks.">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://elevatehr.co/">
+<meta property="og:title" content="ElevateHR; a cloud Based HR Platform that helps you to automate payroll management, leave management, onboarding and other often time-consuming HR tasks.|">
+<meta property="og:description" content="ElevateHR; a cloud Based HR Platform that helps you to automate payroll management, leave management, onboarding and other often time-consuming HR tasks.">
+<meta property="og:image" content="https://elevatehr.co/images/elavate/Elavate_HR.png">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://elevatehr.co/">
+<meta property="twitter:title" content="ElevateHR; a cloud Based HR Platform that helps you to automate payroll management, leave management, onboarding and other often time-consuming HR tasks.|">
+<meta property="twitter:description" content="ElevateHR; a cloud Based HR Platform that helps you to automate payroll management, leave management, onboarding and other often time-consuming HR tasks.">
+<meta property="twitter:image" content="https://elevatehr.co/images/elavate/Elavate_HR.png">
+
+        <!-- Webpage Title -->
+        <title>ElevateHR: HR Platform</title>
+        
+        <!-- Styles -->
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Jost&display=swap" rel="stylesheet">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/fontawesome-all.min.css" rel="stylesheet">
+        <link href="css/swiper.css" rel="stylesheet">
+        <link href="css/styles.css" rel="stylesheet">
+        <link href="css/custom.css" rel="stylesheet">
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        
+        <!-- Favicon  -->
+        <link rel="icon" href="images/favicon.ico">
+
+
+    </head>
+    <body data-bs-spy="scroll" data-bs-target="#navbarExample">
+        
+
+<link rel="stylesheet" href="{% static 'frontend/css/specific/kefa.min.css' %}">
+
+ Navigation -->
+  <nav class="navbar navbar-expand-lg static-top shadow-sm justify-content-right navbar-fixed-top" id="navbarss">
+      <div class="container">
+          <a class="navbar-brand" href="/">
+              <img src="{% static 'frontend/img/site-logo.png' %}" alt="Impact Africa" class="d-inline-block align-top logo">
+          </a>
+          <a class="btn btn-outline-success btn-sm donate-button" href="https://donorbox.org/bridge-to-the-future" target="_blank">Donate</a>
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="menubar"><i class="fas fa-bars"></i></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+              <ul class="navbar-nav mr-auto">
+                  <li class="nav-item active">
+                      <a class="nav-link" href="/">Home
+                          <span class="sr-only">(current)</span>
+                      </a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="{% url 'frontend:power-speakers' %}#eventful">Events</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="{% url 'frontend:power-speakers' %}#subscription">Subscribe</a>
+                  </li>
+                  <li class="nav-item" style="visibility: hidden">
+                      <a class="nav-link" href="{% url 'frontend:power-speakers' %}#work">Our work</a>
+                  </li>
+                  <li class="nav-item ml-5">
+                      <div class="dropdown rounded">
+                          <a href="{% url 'frontend:cause' %}">
+                              <button class="btn btn-success support-btn">Support the Cause</button> </a>
+                          <div class="dropdown-content rounded text-center">
+
+                              <a href="{% url 'frontend:founderchallenge' %}"><span
+                                      style="color: #fcd670;opacity: 1!important; z-index: 100;font-weight: 900">
+                                      Founders Challenge</span> </a>
+                              <a href="{% url 'frontend:microdonation' %}"><span style="color: #28a745;">Microdonation</span></a>
+
+                              <a href="{% url 'frontend:mentornetwork' %}"><span style="color: #e9443c;">Mentor Network</span> </a>
+                              <a href="{% url 'frontend:mentornetwork' %}"><span style="color: #547ec0  ;">Get Involved</span></a>
+
+                          </div>
+
+                      </div>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link btn btn-outline-success pl-4 pr-4 pt-2 pb-1 btn-sm bigscreen support-btn" href="https://donorbox.org/bridge-to-the-future"> <span> Donate</span></a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </nav>
+
+  <!-- Fore section  -->
+  <section class="power-fore ">
+      <!-- Background image and overlay div -->
+      <div class="bg-image-fore d-flex align-items-center justify-content-center img-fluid">
+          <div class="text-center">
+              <div class="icon-mic mb-2">
+                  <span><i class="fas fa-microphone"></i></span>
+              </div>
+              <h1 class="text-center"> <strong>Power Speakers Series</strong> </h1>
+              <div class="mt-3">
+                  <a class="typeform-share button btn btn-warning btn-power p-2 pr-4 pl-4" href="https://impactafrica.typeform.com/to/dvAyPI" data-mode="drawer_right" data-hide-headers=true data-hide-footer=true data-submit-close-delay="2">RSVP »</a>
+                  <script>
+                      (function() {
+                          var qs, js, q, s, d = document,
+                              gi = d.getElementById,
+                              ce = d.createElement,
+                              gt = d.getElementsByTagName,
+                              id = "typef_orm_share",
+                              b = "https://embed.typeform.com/";
+                          if (!gi.call(d, id)) {
+                              js = ce.call(d, "script");
+                              js.id = id;
+                              js.src = b + "embed.js";
+                              q = gt.call(d, "script")[0];
+                              q.parentNode.insertBefore(js, q)
+                          }
+                      })()
+                  </script>
+                  <!-- <button class="btn btn-warning btn-power p-2 pr-4 pl-4">  <span> RSVP » </span> </button> -->
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <!-- Event 1 section -->
+  <section class="power-event1 pb-5" id="eventful">
+      <div class="mb-2 p-5">
+          <h2 class="text-center"> Past events </h2>
+      </div>
+
+      <div class="container mb-4 pt-3">
+          <div class="row">
+              <div class="col-md-6">
+                  <h5 id="subheading2">Scott Chacon</h5>
+                  <div class="text-left pr-5">
+                      <p>Former co-founder and CIO of Github, that was sold to Microsoft Corp. Current Founder and CEO of Chatterbug app</p>
+                  </div>
+                  <div class="text-left text-scott">
+                      <span><i class="far fa-calendar-check pb-3"></i> 28th February 2019</span><br>
+                      <span><i class="fas fa-map-marker-alt pb-3"></i> Daystar University </span><br>
+                      <span><i class="fas fa-users pb-3"></i>  345 Attendees</span>
+                  </div>
+              </div>
+              <div class="col-md-6">
+                  <div class="embed-responsive embed-responsive-16by9">
+                      <iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube-nocookie.com/embed/LtJcvXx-zQM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <section class="gallery">
+      <div class="container">
+          <div class="mb-2 pt-5 pb-3">
+              <h5> Gallery </h5>
+          </div>
+
+          <div class="row-gallery">
+              <div class="row pb-4">
+                  <div class="col-md-3 ">
+                      <img class="img-fluid img-chacon mb-4" src="{% static 'frontend/img/chacon-event.jpeg' %}">
+                  </div>
+                  <div class="col-md-3">
+                      <img class="img-fluid img-chacon mb-4" src="{% static 'frontend/img/chaconmark.jpeg' %}">
+                  </div>
+                  <div class="col-md-3">
+                      <img class="img-fluid img-chacon mb-4" src="{% static 'frontend/img/MC-event.jpeg' %}">
+                  </div>
+                  <div class="col-md-3">
+                      <img class="img-fluid img-chacon " src="{% static 'frontend/img/orina-event.jpeg' %}">
+                  </div>
+              </div>
+          </div>
+
+          <div class="row-gallery">
+              <div class="row pb-4 ">
+                  <div class="col-md-3 ">
+                      <img class="img-fluid img-chacon mb-4" src="{% static 'frontend/img/dudes-event.jpeg' %}">
+                  </div>
+                  <div class="col-md-3">
+                      <img class="img-fluid img-chacon mb-4" src="{% static 'frontend/img/audience-event.jpeg' %}">
+                  </div>
+                  <div class="col-md-3">
+                      <img class="img-fluid img-chacon mb-4" src="{% static 'frontend/img/chizi-event.jpeg' %}">
+                  </div>
+                  <div class="col-md-3">
+                      <img class="img-fluid img-chacon" src="{% static 'frontend/img/karake-event.jpeg' %}">
+                  </div>
+              </div>
+          </div>
+
+          <div class="row-gallery">
+              <div class="row pb-4 ">
+                  <div class="col-md-3 ">
+                      <img class="img-fluid img-chacon mb-4" src="{% static 'frontend/img/thinking-event.jpeg' %}">
+                  </div>
+                  <div class="col-md-3">
+                      <img class="img-fluid img-chacon mb-4" src="{% static 'frontend/img/chacon-presents.jpg' %}">
+                  </div>
+                  <div class="col-md-3">
+                      <img class="img-fluid img-chacon mb-4" src="{% static 'frontend/img/chacon-poster.jpg' %}">
+                  </div>
+                  <div class="col-md-3">
+                      <img class="img-fluid img-chacon" src="{% static 'frontend/img/chacon-and-mark.jpg' %}">
+                  </div>
+              </div>
+          </div>
+          <div class="pt-2 pb-5">
+              <button id="load" class="btn btn-outline-primary p-2 pl-5 pr-5">Load more</button>
+          </div>
+      </div>
+  </section>
+
+  <!-- Event 2 section -->
+  <section class="power-event2 pb-5">
+      <div class="container pb-4">
+
+          <div class="mb-2 p-5">
+              <h4 class="text-center"> Power series 2 </h4>
+          </div>
+
+          <div class="row">
+              <div class="col-md-6">
+                  <div class="embed-responsive embed-responsive-16by9 pr-4">
+                      <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/UJX6z0FQONA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+              </div>
+              <div class="col-md-6 pl-5 ">
+                  <h5 id="subheading2">Sameer Maskey</h5>
+                  <div class="text-left">
+                      <p>Founder, CEO Fuse machines (AI startup in New York), adjunct associate professor, Columbia University. He was in Nairobi to speak about opportunities in AI and launched an AI advancement program in Nairobi.
+                      </p>
+                  </div>
+                  <div class="text-scott">
+                      <span><i class="far fa-calendar-check pb-3"></i> 9th August 2019</span><br>
+                      <span><i class="fas fa-map-marker-alt pb-3"></i> Ajua office - Pinetree plaza </span><br>
+                      <span><i class="fas fa-users pb-3"></i> 100 Attendees</span>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <section class="gallery">
+      <div class="container">
+          <div class="mb-2 pt-5 pb-3">
+              <h5> Gallery </h5>
+          </div>
+
+          <div class="row-gallery2">
+              <div class="row pb-4">
+                  <div class="col-md-3 ">
+                      <img class="img-fluid img-sameer mb-4" src="{% static 'frontend/img/jenga-ajua.jpg' %}">
+                  </div>
+                  <div class="col-md-3">
+                      <img class="img-fluid img-sameer mb-4" src="{% static 'frontend/img/jenga-launch3.jpg' %}">
+                  </div>
+                  <div class="col-md-3">
+                      <img class="img-fluid img-sameer mb-4" src="{% static 'frontend/img/jenga-launch2.jpg' %}">
+                  </div>
+                  <div class="col-md-3">
+                      <img class="img-fluid img-sameer " src="{% static 'frontend/img/jenga-launch4.jpg' %}">
+                  </div>
+              </div>
+          </div>
+
+          <div class="row-gallery2">
+              <div class="row pb-4 ">
+                  <div class="col-md-3 ">
+                      <img class="img-fluid img-sameer mb-4" src="{% static 'frontend/img/jenga-audience.jpg' %}">
+                  </div>
+                  <div class="col-md-3">
+                      <img class="img-fluid img-sameer mb-4" src="{% static 'frontend/img/jenga-mark.jpg' %}">
+                  </div>
+                  <div class="col-md-3">
+                      <img class="img-fluid img-sameer mb-4" src="{% static 'frontend/img/jenga-venue.jpg' %}">
+                  </div>
+                  <div class="col-md-3">
+                      <img class="img-fluid img-sameer" src="{% static 'frontend/img/jenga-venue2.jpg' %}">
+                  </div>
+              </div>
+          </div>
+
+
+          <div class="row-gallery2">
+              <div class="row pb-4 ">
+                  <div class="col-md-3 ">
+                      <img class="img-fluid img-sameer mb-4" src="{% static 'frontend/img/jenga-dudes.jpg' %}">
+                  </div>
+                  <div class="col-md-3">
+                      <img class="img-fluid img-sameer mb-4" src="{% static 'frontend/img/jenga-lady.jpg' %}">
+                  </div>
+                  <div class="col-md-3">
+                      <img class="img-fluid img-sameer" src="{% static 'frontend/img/jenga-school.jpg' %}">
+                  </div>
+              </div>
+          </div>
+
+
+          <div class="row-gallery2">
+              <div class="row pb-4 ">
+                  <div class="col-md-3 ">
+                      <img class="img-fluid img-sameer mb-4" src="{% static 'frontend/img/jenga-mark-sameer2.jpg' %}">
+                  </div>
+                  <div class="col-md-3">
+                      <img class="img-fluid img-sameer mb-4" src="{% static 'frontend/img/jenga-phyllis.jpg' %}">
+                  </div>
+                  <div class="col-md-3">
+                      <img class="img-fluid img-sameer mb-4" src="{% static 'frontend/img/jenga-launch.jpg' %}">
+                  </div>
+                  <div class="col-md-3">
+                      <img class="img-fluid img-sameer" src="{% static 'frontend/img/jenga-mark-sameer.jpg' %}">
+                  </div>
+              </div>
+          </div>
+          <div class="row-gallery2">
+            <div class="row pb-4 ">
+                <div class="col-md-3 ">
+                    <img class="img-fluid img-sameer mb-4" src="{% static 'frontend/img/jenga-mark-sameer2.jpg' %}">
+                </div>
+                <div class="col-md-3">
+                    <img class="img-fluid img-sameer mb-4" src="{% static 'frontend/img/jenga-phyllis.jpg' %}">
+                </div>
+                <div class="col-md-3">
+                    <img class="img-fluid img-sameer mb-4" src="{% static 'frontend/img/jenga-launch.jpg' %}">
+                </div>
+                <div class="col-md-3">
+                    <img class="img-fluid img-sameer" src="{% static 'frontend/img/jenga-mark-sameer.jpg' %}">
+                </div>
+            </div>
+        </div>
+        <div class="row-gallery2">
+            <div class="row pb-4 ">
+                <div class="col-md-3 ">
+                    <img class="img-fluid img-sameer mb-4" src="{% static 'frontend/img/jenga-mark-sameer2.jpg' %}">
+                </div>
+                <div class="col-md-3">
+                    <img class="img-fluid img-sameer mb-4" src="{% static 'frontend/img/jenga-phyllis.jpg' %}">
+                </div>
+                <div class="col-md-3">
+                    <img class="img-fluid img-sameer mb-4" src="{% static 'frontend/img/jenga-launch.jpg' %}">
+                </div>
+                <div class="col-md-3">
+                    <img class="img-fluid img-sameer" src="{% static 'frontend/img/jenga-mark-sameer.jpg' %}">
+                </div>
+            </div>
+        </div>
+        <div class="row-gallery2">
+            <div class="row pb-4 ">
+                <div class="col-md-3 ">
+                    <img class="img-fluid img-sameer mb-4" src="{% static 'frontend/img/jenga-mark-sameer2.jpg' %}">
+                </div>
+                <div class="col-md-3">
+                    <img class="img-fluid img-sameer mb-4" src="{% static 'frontend/img/jenga-phyllis.jpg' %}">
+                </div>
+                <div class="col-md-3">
+                    <img class="img-fluid img-sameer mb-4" src="{% static 'frontend/img/jenga-launch.jpg' %}">
+                </div>
+                <div class="col-md-3">
+                    <img class="img-fluid img-sameer" src="{% static 'frontend/img/jenga-mark-sameer.jpg' %}">
+                </div>
+            </div>
+        </div>
+        <div class="row-gallery2">
+            <div class="row pb-4 ">
+                <div class="col-md-3 ">
+                    <img class="img-fluid img-sameer mb-4" src="{% static 'frontend/img/jenga-mark-sameer2.jpg' %}">
+                </div>
+                <div class="col-md-3">
+                    <img class="img-fluid img-sameer mb-4" src="{% static 'frontend/img/jenga-phyllis.jpg' %}">
+                </div>
+                <div class="col-md-3">
+                    <img class="img-fluid img-sameer mb-4" src="{% static 'frontend/img/jenga-launch.jpg' %}">
+                </div>
+                <div class="col-md-3">
+                    <img class="img-fluid img-sameer" src="{% static 'frontend/img/jenga-mark-sameer.jpg' %}">
+                </div>
+            </div>
+        </div><div class="row-gallery2">
+            <div class="row pb-4 ">
+                <div class="col-md-3 ">
+                    <img class="img-fluid img-sameer mb-4" src="{% static 'frontend/img/jenga-mark-sameer2.jpg' %}">
+                </div>
+                <div class="col-md-3">
+                    <img class="img-fluid img-sameer mb-4" src="{% static 'frontend/img/jenga-phyllis.jpg' %}">
+                </div>
+                <div class="col-md-3">
+                    <img class="img-fluid img-sameer mb-4" src="{% static 'frontend/img/jenga-launch.jpg' %}">
+                </div>
+                <div class="col-md-3">
+                    <img class="img-fluid img-sameer" src="{% static 'frontend/img/jenga-mark-sameer.jpg' %}">
+                </div>
+            </div>
+        </div>
+
+          <div class="pt-2 pb-5">
+              <button id="load2" class="btn btn-outline-primary p-2 pl-5 pr-5">Load more</button>
+          </div>
+      </div>
+  </section>
+  <style>
+    *, body {
+        margin: 0;
+        padding: 0;
+      }
+      .flex {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+      }
+      .content {
+        height: 100px;
+        width: 45%;
+        color: #fff;
+        font-size: 24px;
+        line-height: 100px; /* centering text just for view */
+        text-align: center;
+        background-color: grey;
+        margin: 5px;
+        border: 1px solid lightgrey;
+        display: none;
+      }
+      #loadMore {
+        width: 200px;
+        color: #fff;
+        display: block;
+        text-align: center;
+        margin: 20px auto;
+        padding: 10px;
+        border-radius: 10px;
+        border: 1px solid transparent;
+        background-color: blue;
+        transition: .3s;
+      }
+      #loadMore:hover {
+        color: blue;
+        background-color: #fff;
+        border: 1px solid blue;
+        text-decoration: none;
+      }
+      .noContent {
+        color: #000 !important;
+        background-color: transparent !important;
+        pointer-events: none;
+      }
+  </style>
+
+  <section class="power-subscribe d-flex align-items-center" id="subscription">
+      <div class="container text-center">
+          <h5> <strong>Subscribe for updates on Power speaker series events</strong></h5>
+          <div class="pt-3">
+              <a class="typeform-share button" href="https://impactafrica.typeform.com/to/dvAyPI" data-mode="drawer_right" style="display:inline-block;text-decoration:none;background-color:#DD2643;color:white;cursor:pointer;font-family:Helvetica,Arial,sans-serif;font-size:20px;line-height:50px;text-align:center;margin:0;height:50px;padding:0px 33px;border-radius:25px;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:bold;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;"
+                  data-hide-headers=true data-hide-footer=true data-submit-close-delay="2" target="_blank">Subscribe </a>
+              <script>
+                  (function() {
+                      var qs, js, q, s, d = document,
+                          gi = d.getElementById,
+                          ce = d.createElement,
+                          gt = d.getElementsByTagName,
+                          id = "typef_orm_share",
+                          b = "https://embed.typeform.com/";
+                      if (!gi.call(d, id)) {
+                          js = ce.call(d, "script");
+                          js.id = id;
+                          js.src = b + "embed.js";
+                          q = gt.call(d, "script")[0];
+                          q.parentNode.insertBefore(js, q)
+                      }
+                  })()
+              </script>
+          </div>
+      </div>
+  </section>
+
+  </html>
