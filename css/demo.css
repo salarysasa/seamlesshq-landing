@@ -33,6 +33,11 @@ p{
     margin:0 auto;
     padding-bottom: 20px;
 }
+.learn{
+    width:50%;
+    margin:0 auto;
+    padding-bottom: 20px;
+}
 
 .demo_card{
     padding:45px;
@@ -58,6 +63,10 @@ label{
     text-align: left;
     padding-bottom: 5px;
 }
+.learn p{
+    text-align: left;
+    padding-bottom: 5px;
+}
 
 @media (max-width: 700px) {
     .row_card{
@@ -73,6 +82,9 @@ label{
         width:100%
     }
     .modules{
+        width:100%
+    }
+    .learn{
         width:100%
     }
     .demo{

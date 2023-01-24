@@ -111,9 +111,9 @@
                         <li class="nav-item">
                             <a class="nav-link links" target="_blank" href="https://events.elevatehr.co/">Events</a>
                         </li>
-                        <li class="nav-item">
+                        <!-- <li class="nav-item">
                             <a class="nav-link links" target="_blank" href="https://merch.elevatehr.co/">Merchandise</a>
-                        </li>
+                        </li> -->
                         <li class="nav-item">
                             <a class="nav-link links" target="_blank" href="https://podcasts.seamlesshq.co">Podcast</a>
                         </li>
@@ -149,7 +149,7 @@
                             <input type="tel" placeholder="Phone Number" id="PhoneNumber" name="PhoneNumber"><br>
                             <div class="modules">
                                 <p>What modules are you looking for? Select all relevant ones</p>
-                                <input type="checkbox"  class="check"  id="payroll" name="modules" value=" Payroll management">
+                                <input type="checkbox"  class="check"  id="payroll" name="modules" value="Payroll management">
                                 <label for="payroll">Payroll management</label><br>
                                 <input type="checkbox" class="check" id="performance" name="modules" value="Performance management">
                                 <label for="performance"> Performance management</label><br>
@@ -166,28 +166,28 @@
                                 <input type="checkbox" class="check"  id="other" name="modules" value="Other">
                                 <label for="vehicle3"> Other</label><br>
                             </div>                          
-                            <div class="modules">
+                            <div class="learn">
                                 <p>Where did you learn about us?</p>
-                                <input type="checkbox"  class="check"  id="payroll" name="modules" value="Social Media ( LinkedIn, Twitter, Facebook, Instagram)">
+                                <input type="radio"  class="check"  id="payroll" name="learn" value="Social Media">
                                 <label for="payroll">Social Media ( LinkedIn, Twitter, Facebook, Instagram)</label><br>
-                                <input type="checkbox" class="check" id="performance" name="modules" value="ElevateHR Website">
+                                <input type="radio" class="check" id="performance" name="learn" value="ElevateHR Website">
                                 <label for="performance">ElevateHR Website</label><br>
-                                <input type="checkbox" class="check"  id="lnd" name="modules" value="ElevateHR Slack Community">
+                                <input type="radio" class="check"  id="lnd" name="learn" value="ElevateHR Slack Community">
                                 <label for="lnd">ElevateHR Slack Community</label><br>
-                                <input type="checkbox" class="check"  id="analytics" name="modules" value="Email Campaign">
+                                <input type="radio" class="check"  id="analytics" name="learn" value="Email Campaign">
                                 <label for="analytics">Email Campaign</label><br>
-                                <input type="checkbox" class="check"  id="onboarding" name="modules" value="Google Search">
+                                <input type="radio" class="check"  id="onboarding" name="learn" value="Google Search">
                                 <label for="vehicle3"> Google Search</label><br>
-                                <input type="checkbox" class="check"  id="contract" name="modules" value="Online event (Webinar/Training)">
+                                <input type="radio" class="check"  id="contract" name="learn" value="Online event (Webinar/Training)">
                                 <label for="vehicle3">Online event (Webinar/Training)</label><br>
-                                <input type="checkbox" class="check"  id="compliance" name="modules" value="Physical Event">
+                                <input type="radio" class="check"  id="compliance" name="learn" value="Physical Event">
                                 <label for="vehicle3"> Physical Event</label><br>
-                                <input type="checkbox" class="check"  id="compliance" name="modules" value="Referral">
+                                <input type="radio" class="check"  id="compliance" name="learn" value="Referral">
                                 <label for="vehicle3">Referral</label><br>
-                                <input type="checkbox" class="check"  id="other" name="modules" value="Other">
+                                <input type="radio" class="check"  id="other" name="learn" value="Other">
                                 <label for="vehicle3"> Other</label><br>
                             </div>   
-                            <input placeholder="Specify" id="Company" name="Specify" required><br/>   
+                            <input placeholder="Specify" id="Company" name="learn" ><br/>   
                             <button class="btn-outline-lg page-scroll"  type="submit">
                                 <span id="button_submit">Submit</span>
                                 <div id="first_loader" class="first-loader"></div>
@@ -244,7 +244,7 @@
                                 </a>
                             </span>
                             <span class="fa-stack">
-                                <a href="https://www.instagram.com/seamlesshq/" target="_blank">
+                                <a href="https://www.instagram.com/elevatehr_africa/" target="_blank">
                                     <i class="fab fa-instagram fa-stack-1x"></i>
                                 </a>
                             </span>
@@ -276,16 +276,32 @@
                 document.getElementById('button_submit').style.display = 'none';
                 document.getElementById('first_loader').style.display = 'block';
                 var checkboxes = document.getElementsByName('modules');
+                var checkboxes1 = document.getElementsByName('learn');
                 // check all submitted modules
-                var modules = " ";
+                var modules = [ ];
                 for (var i=0, n=checkboxes.length;i<n;i++) 
                 {
                     if (checkboxes[i].checked) 
                     {
-                        modules += checkboxes[i].value+", ";
+                        modules.push(checkboxes[i].value); 
                     }
                 }
-                if (modules) modules = modules.substring(1);
+                // if (modules) modules = modules.substring(1);
+
+                event.preventDefault();
+                
+                // var learn = [ ];
+                
+                var learn = " ";
+                for (var i=0, n=checkboxes1.length;i<n;i++) 
+                {
+                    if (checkboxes1[i].checked) 
+                    {
+                        // learn.push(checkboxes1[i].value); 
+                        learn += checkboxes1[i].value;
+                    }
+                }
+                if (learn) learn =learn.substring(1);
 
                 event.preventDefault();
 
@@ -299,6 +315,7 @@
                             "Phone Number": document.getElementById("PhoneNumber").value,
                             "Title": document.getElementById("Title").value,
                             "Modules": modules,
+                            "Learn": learn,
                         }
                     }, {headers: headers_}
                 )
