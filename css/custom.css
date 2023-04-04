@@ -174,6 +174,10 @@
     .mobile{
         display: none;
     }
+    .capital_container{
+        max-width: 800px;
+        margin: auto;
+    }
 }
 
 @media (max-width: 428px) {
