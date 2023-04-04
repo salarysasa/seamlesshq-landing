@@ -374,7 +374,8 @@
 .payroll_container_faq_panel {
     display: none;
     overflow: hidden;
-    padding: 0 2rem;
+    padding: 0 1rem;
+    width: 80%;
     color: #8E6FB3
 }
 
