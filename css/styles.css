@@ -412,7 +412,7 @@ a:hover {
 }
 
 .navbar .navbar-nav {
-	margin-top: 0.75rem;
+	margin-top: 2rem;
 	margin-bottom: 0.5rem;
 }
 
@@ -485,6 +485,15 @@ a:hover {
 	padding: 0;
 	border: none;
 	font-size: 1.25rem;
+}
+
+.navbar-toggler  {
+	z-index: 1;
+}
+
+.img-logo {
+	z-index: 1;
+	position: relative;
 }
 
 
