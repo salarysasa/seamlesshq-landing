@@ -1,60 +1,3 @@
-/* navbar buttons styling */
-.button-links,
-.button-links2,
-.button-links3 {
-    padding: 0rem 3.2rem;
-    font-size: medium;
-    font-weight: 400;
-}
-
-.button-links {
-    background: #FFF8F2;
-}
-
-.button-links2{
-    color: #fff;
-    padding: 0rem 0.8rem;
-}
-
-.button-links3 {
-    background: transparent;
-    padding: 0rem 1rem;
-    border: none;
-}
-
-.button-links3:hover {
-    color: #FF800B;
-    background: transparent;
-}
-
-.button-links2:hover {
-    color: #fff;
-    background: #D46B0B;
-}
-
-.button-links:hover {
-    color: #FF800B;
-    background: #FFF1E5;
-}
-
-.links {
-    font-weight: 400;
-    font-size: small;
-}
-
-/* elevate hr logo styling */
-.logo_img {
-    object-fit: contain;
-    width: 100%;
-    height: 60px;
-}
-
-/* elevate footer styling */
-.logo_img1 {
-    object-fit: contain;
-    height: 78px;
-}
-
 /* section one styling */
 .payroll_container_section_one {
     background: #FAF7FD;
@@ -93,11 +36,32 @@
 
 .payroll_container_section_one_subsection_one_button {
     background: #499540;
-    color: #fff;
     border: none;
     padding: 0.4rem 0.1rem;
     border-radius: 5px;
     width: 50%;
+}
+
+.button_a {
+    color: #fff;
+    text-decoration: none;
+    transition: text-decoration ease-out 0.5s;
+}
+
+.button_a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.button_a1 {
+    color: #FF800B;
+    text-decoration: none;
+    transition: text-decoration ease-out 0.5s;
+}
+
+.button_a1:hover {
+    color: #FF800B;
+    text-decoration: underline;
 }
 
 .payroll_container_section_one_subsection_two {
@@ -109,6 +73,7 @@
     object-fit: contain;
     width: 100%;
 }
+
 /* end of section one */
 /* start of section two */
 .payroll_container_section_two {
@@ -398,6 +363,12 @@
     }
 }
 
+
+@media screen and (max-width: 366px) {
+    .payroll_container_section_one_subsection_one_button {
+        width: 70%;
+    }
+}
 
 @media only screen and (min-width: 576px) {
     .payroll_container_section_two_more_divs {
