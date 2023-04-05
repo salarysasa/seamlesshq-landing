@@ -1618,3 +1618,65 @@ a:hover {
 	text-decoration: none;
 	border: 1px solid  #c6e649;
 }
+
+/* 
+---- Common nav and Footer styling ------
+----- To keep the code Dry -----
+*/
+
+/* navbar buttons styling */
+.button-links,
+.button-links2,
+.button-links3 {
+    padding: 0rem 3.2rem;
+    font-size: medium;
+    font-weight: 400;
+}
+
+.button-links {
+    background: #FFF8F2;
+}
+
+.button-links2{
+    color: #fff;
+    padding: 0rem 0.8rem;
+}
+
+.button-links3 {
+    background: transparent;
+    padding: 0rem 1rem;
+    border: none;
+}
+
+.button-links3:hover {
+    color: #FF800B;
+    background: transparent;
+}
+
+.button-links2:hover {
+    color: #fff;
+    background: #D46B0B;
+}
+
+.button-links:hover {
+    color: #FF800B;
+    background: #FFF1E5;
+}
+
+.links {
+    font-weight: 400;
+    font-size: small;
+}
+
+/* elevate hr logo styling */
+.logo_img {
+    object-fit: contain;
+    width: 100%;
+    height: 60px;
+}
+
+/* elevate footer styling */
+.logo_img1 {
+    object-fit: contain;
+    height: 78px;
+}
