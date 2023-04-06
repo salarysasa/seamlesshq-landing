@@ -1,0 +1,138 @@
+/* inquiry form styling */
+
+.outsourcing_inquiry_container {
+    background: #FAF7FD;
+    border: 1px solid #542B87;
+    border-radius: 16px;
+    width: 80%;
+    margin: 6rem auto;
+    padding-bottom: 2rem;
+}
+
+.outsourcing_inquiry_container_article {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: 2rem auto;
+    gap: 1rem;
+}
+
+.outsourcing_inquiry_container_article_section{
+    display: flex;
+    flex-direction: column;
+}
+
+.outsourcing_inquiry_container_article_section_h2 {
+    font-weight: 400;
+    line-height: 1.2;
+    text-align: center;
+    font-size: larger;
+    color: #422F59 !important;
+}
+
+.outsourcing_inquiry_container_article_section_p {
+    color: #000;
+    font-size: small;
+    font-weight: 400;
+    width: 90%;
+    text-align: center;
+    line-height: 1.2;
+}
+
+.outsourcing_inquiry_container_article_form_fieldset {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: auto;
+    width: 95%;
+}
+
+.inquiry_inputs {
+    background: #FFFFFF;
+    border: 1px solid #C4C4C4;
+    border-radius: 4px;
+    width: 100%;
+    padding: 0.5rem;
+}
+
+.inquiry_inputs::placeholder,
+.label_for_how_did_you_learn,
+.option_how_did_you_learn {
+    color: #542B87 !important;
+    font-weight: 400;
+    font-size: small;
+}
+
+.outsourcing_inquiry_container_article_form_fieldset_inner_div {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#howdidyoulearn {
+    color: #333;
+    opacity: 0.3;
+    font-size: small;
+    font-weight: 400;
+}
+
+.submit_btn_inquiry_form {
+    background: #FF800B;
+    border-radius: 4px;
+    padding: 0.3rem 0.5rem;
+    border: none;
+    width: 40%;
+    color: #FFFFFF;
+    margin-left: 60%;
+    transition: all 0.3s;
+}
+
+.submit_btn_inquiry_form:hover {
+    background: #D46B0B;
+}
+
+.spac_finder {
+    height: 1rem;
+}
+
+/* resposiveness styling */
+
+/* special case for buttons below 360px */
+@media only screen and (max-width: 360px) {
+    .submit_btn_inquiry_form {
+        width: 50%;
+        margin-left: 50%;
+    }
+}
+
+/* other screens */
+@media only screen and (min-width: 576px) {
+    .outsourcing_inquiry_container_article_section_h2{
+        font-size: x-large;
+    }
+}
+
+
+@media only screen and (min-width: 768px) {
+    .outsourcing_inquiry_container_article_section_p, 
+    .inquiry_inputs::placeholder,
+    .label_for_how_did_you_learn,
+    .option_how_did_you_learn,
+    #howdidyoulearn {
+        font-size: medium;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .outsourcing_inquiry_container_article_section_h2{
+        font-size: xx-large;
+    }
+
+    .outsourcing_inquiry_container_article_section {
+        align-items: center;
+    }
+    .outsourcing_inquiry_container_article_section_p {
+        width: 80%;
+    }
+}
+
