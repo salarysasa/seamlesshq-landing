@@ -1,0 +1,102 @@
+/* thank you page styling */
+.outsourcing_thankyou_container {
+    background: #FAF7FD;
+    border: 1px solid #542B87;
+    border-radius: 16px;
+    width: 80%;
+    margin: 6rem auto;
+    padding-bottom: 2rem;
+}
+
+.outsourcing_thankyou_container_section {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 2rem auto;
+    gap: 1rem;
+    text-align: center;
+}
+
+.outsourcing_thankyou_container_section_h2 {
+    font-weight: 400;
+    font-size: larger;
+    line-height: 1.2;
+    color: #422F59 !important;
+}
+
+.outsourcing_thankyou_container_section_p {
+    font-weight: 400;
+    font-size: small;
+    line-height: 1.2;
+    color: #000000;
+}
+
+
+.outsourcing_thankyou_container_section_h2_btn {
+    width: 90%;
+    padding: .4rem .5rem;
+    background: #FF800B;
+    border-radius: 4px;
+    padding: 0.3rem 0.5rem;
+    border: none;
+    color: #FFFFFF;
+    margin: auto;
+    font-weight: 400;
+    font-size: small;
+    transition: all 0.3s;
+}
+
+.outsourcing_thankyou_container_section_h2_btn:hover {
+    background: #D46B0B;
+}
+
+.space_finder {
+    height: 0.4rem;
+}
+
+/* resposiveness styling */
+
+/* special case for buttons below 360px */
+@media only screen and (max-width: 360px) {
+    .outsourcing_thankyou_container_section_h2_btn {
+        width: 100%;
+    }
+}
+
+/* other screens */
+@media only screen and (min-width: 576px) {
+    .outsourcing_thankyou_container_section_h2{
+        font-size: xx-large;
+    }
+
+    .outsourcing_thankyou_container_section {
+        align-items: center;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .outsourcing_thankyou_container_section_p,
+    .outsourcing_thankyou_container_section_h2_btn {
+        width: 80%;
+        font-size: medium;
+    }
+    .outsourcing_thankyou_container_section_h2_btn {
+        width: 70%;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .outsourcing_thankyou_container_section_h2_btn {
+        width: 40%;
+    }
+}
+
+@media only screen and (min-width: 1330px) {
+    .outsourcing_thankyou_container_section_h2_btn {
+        width: 30%;
+    }
+    .outsourcing_thankyou_container_section_p {
+        font-size: large;
+    }
+}
+
