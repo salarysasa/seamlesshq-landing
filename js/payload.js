@@ -1,5 +1,4 @@
 let accordian = document.getElementsByClassName("payroll_container_faq_accordion");
-console.log(accordian)
 for(let a=0; a < accordian.length; a++){
     accordian[a].addEventListener("click", function() {
         let panel = this.nextElementSibling;
