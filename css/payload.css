@@ -41,6 +41,13 @@
     padding: 0.4rem 0.1rem;
     border-radius: 5px;
     width: 50%;
+    transition: background .3s ease-out;
+}
+
+.payroll_container_section_one_subsection_one_button:hover {
+    background: #288B44;
+    text-decoration: none;
+    color: #fff;
 }
 
 .button_a {
