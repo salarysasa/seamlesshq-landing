@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+* ,
+html,
+body,
+main {
+  font-family: 'Inter', sans-serif;
+}
+
+/*PAYE UI styling */
+
+.main_body {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 2rem;
+  width: 80%;
+  margin: auto;
+}
+
+/* start styling article 1 */
+
+.main_body_article1 {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 3rem;
+}
+
+.main_body_article1_h2 {
+  font-size: 1.438rem;
+  font-weight: 400;
+  color: #374151;
+  margin: 0rem;
+}
+
+.main_body_article1_div {
+  display: flex;
+  border-radius: 9999px;
+  background-color: #E7E2F2;
+  padding: 0.375rem 1.922rem 0.375rem 0.375rem;
+  justify-content: center;
+}
+
+.main_body_article1_div_btn1,
+.main_body_article1_div_btn2 {
+  width: 100%;
+  padding: 0.375rem 1.625rem;
+  border-radius: 9999px;
+  border: none;
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: #374151;
+  cursor: pointer;
+}
+
+.main_body_article1_div_btn1 {
+  background-color: #fff;
+}
+
+.main_body_article1_form_fieldset {
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px;
+  padding: 1rem;
+}
+
+.main_body_article1_form_fieldset_label_gross {
+  font-size: 0.875rem;
+  font-weight: 400;
+  padding: 0.5rem 0rem;
+}
+
+.main_body_article1_form_fieldset_input_gross_div_holder {
+  display: flex;
+}
+
+.main_body_article1_form_fieldset_input_gross_div_holder > span {
+  color: #374151;
+  font-size: 0.875rem;
+  padding: 0.5rem;
+  font-weight: 400;
+  background-color: #E7E2F2;
+}
+
+.main_body_article1_form_fieldset_input_gross {
+   border: none;
+   padding: 0rem 0rem 0rem 1rem;
+}
+
+.main_body_article1_form_fieldset_input_gross::placeholder {
+  color: #6B7280;
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+
+.main_body_article1_form_fieldset_h3 {
+  font-size: 1.313rem;
+  font-weight: 400;
+  margin-top: 3rem;
+  color: #374151;
+}
+
+.Month {
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.main_body_article1_form_fieldset_label_nssfrate {
+  font-size: 1rem;
+  font-weight: 400;
+  font-weight: 400;
+  color: #374151;
+  padding: 0rem 0rem 0.3rem 0rem;
+}
+
+.main_body_article1_form_fieldset_input_nssfrate {
+  border: none;
+  padding: 0.8rem;
+}
+
+.main_body_article1_form_fieldset_label_nssfrate::placeholder {
+  color: #374151;
+  padding-left: 0.5rem;
+}
+
+.main_body_article1_form_fieldset_input_deductnhif_div_holder {
+  display: flex;
+}
+
+.main_body_article1_form_fieldset_label_deductnhif {
+  font-weight: 400;
+  font-size: 0.875rem;
+  color: #374151;
+}
+
+.net_salary_form {
+  display: none;
+}
+
+/* end of styling article 1 */
+
+/* start odf styling article 2 */
+
+.main_body_article2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.main_body_article2_div {
+  border-radius: 0.75rem 0.75rem 0rem 0rem;
+  background-color: #422F59;
+  color: #F3F4F6;
+  text-align: center;
+  padding: 2rem;
+}
+
+.main_body_article2_div_p {
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+
+.main_body_article2_div_h3 {
+  font-size: 2.063rem;
+  font-weight: 400;
+  margin: 0rem;
+}
+
+.main_body_article2_section {
+  background-color: #F3F4F6;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem 2.063rem;
+}
+
+.main_body_article2_section_div {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.main_body_article2_section_div_p {
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: #374151;
+}
+
+.main_body_article2_section_div_h4 {
+  font-size: 0.938rem;
+  font-weight: 700;
+}
+
+.calc_extra {
+  font-weight: 400;
+}
+
+.calc_extra_2 {
+  color: #FF800B;
+}
+
+.main_body_article1_form_fieldset_label_gross_option {
+  padding: 1rem;
+  border: none;
+  outline: none;
+}
+
+/* end of styling article 2 */
+
+/* media queries */
+@media only screen and (min-width: 768px) {
+  .main_body {
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 4rem;
+  }
+}
