@@ -197,7 +197,7 @@ main {
 }
 
 .main_body_article1_form_fieldset_label_gross_option {
-  padding: 1rem;
+  padding: 4rem;
   border: none;
   outline: none;
 }
@@ -210,6 +210,6 @@ main {
     grid-template-columns: repeat(2, 1fr);
     justify-content: space-between;
     align-items: center;
-    margin-top: 4rem;
+    margin-top: 10rem;
   }
 }
