@@ -13,6 +13,7 @@ main {
   grid-template-columns: repeat(1, 1fr);
   gap: 2rem;
   width: 80%;
+  height: 90vh;
   margin: auto;
 }
 
@@ -84,6 +85,7 @@ main {
 .main_body_article1_form_fieldset_input_gross {
    border: none;
    padding: 0rem 0rem 0rem 1rem;
+   outline: 2px #b1aeae solid;
 }
 
 .main_body_article1_form_fieldset_input_gross::placeholder {
@@ -129,6 +131,7 @@ main {
 .main_body_article1_form_fieldset_label_deductnhif {
   font-weight: 400;
   font-size: 0.875rem;
+  padding-left: 0.5rem;
   color: #374151;
 }
 
@@ -156,12 +159,14 @@ main {
 .main_body_article2_div_p {
   font-size: 0.875rem;
   font-weight: 400;
+  color: #F3F4F6;
 }
 
 .main_body_article2_div_h3 {
   font-size: 2.063rem;
   font-weight: 400;
   margin: 0rem;
+  color: #F3F4F6;
 }
 
 .main_body_article2_section {
@@ -197,7 +202,7 @@ main {
 }
 
 .main_body_article1_form_fieldset_label_gross_option {
-  padding: 4rem;
+  padding: 1rem;
   border: none;
   outline: none;
 }
@@ -210,6 +215,6 @@ main {
     grid-template-columns: repeat(2, 1fr);
     justify-content: space-between;
     align-items: center;
-    margin-top: 10rem;
+    margin-top: 1rem;
   }
 }
