@@ -136,7 +136,10 @@
     </nav> <!-- end of navbar -->
     <!-- end of navigation -->
 <body>
-    <div class="px-8 mb-4 flex-1 text-center" style="color:violet"><h1 class="mb-4 text-3xl font-semibolad">PAYE Calculator</h1></div>
+    <h1 style="font-size: 1.5rem; font-weight: 700; text-align: center; padding-top: 5rem;">
+        PAYE Calculator
+    </h1>
+    
     <main  class="main_body">
         <article class="main_body_article1">
             <h2 class="main_body_article1_h2">
@@ -160,7 +163,7 @@
                         <span>
                             Ksh
                         </span>
-                        <input class="main_body_article1_form_fieldset_input_gross" type="text" id="grossIncome" name="glosssalary" placeholder="Gross Salary" required oninput="calculateNetPay()">
+                        <input class="main_body_article1_form_fieldset_input_gross" type="text" id="grossIncome" name="glosssalary" placeholder="Input Gross Salary i.e 100" required oninput="calculateNetPay()">
                     </div>
                     <label for="payperiod" class="main_body_article1_form_fieldset_label_gross">
                         Select pay period
@@ -179,9 +182,11 @@
                     <label for="nssfrate" class="main_body_article1_form_fieldset_label_nssfrate">
                         NSSF rate
                     </label>
-                    <p for="nssfrate" class="main_body_article1_form_fieldset_label_nssfrate">
-                        Ksh. 1080
-                    </p>
+                    <select name="payperiod" id="payperiod" class="main_body_article1_form_fieldset_label_gross_option">
+                        <option value="month">
+                            New rate
+                        </option>
+                    </select>
                     <div class="main_body_article1_form_fieldset_input_deductnhif_div_holder">
                         <input class="main_body_article1_form_fieldset_input_deductnhif" type="checkbox" id="deductnhif" name="deductnhif" value="nhif" checked>
                         <label for="deductnhif" class="main_body_article1_form_fieldset_label_deductnhif">
@@ -201,7 +206,7 @@
                         <span>
                             Ksh
                         </span>
-                        <input class="main_body_article1_form_fieldset_input_gross net_salary_input" type="text" id="netIncome" name="netsalary" placeholder="Net Salary" required >
+                        <input class="main_body_article1_form_fieldset_input_gross net_salary_input" type="text" id="netIncome" name="netsalary" placeholder="Input Net Salary i.e 100" required >
                     </div>
                     <label for="payperiod" class="main_body_article1_form_fieldset_label_gross">
                         Select pay period
