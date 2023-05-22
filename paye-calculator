@@ -98,11 +98,11 @@
                         <ul class="dropdown-menu" aria-labelledby="dropdown01">
                             <li><a class="dropdown-item" href="index#onboarding">Onboarding</a></li>
                             <li><a class="dropdown-item" href="index#self_service">Employee Self Service</a></li>
-                            <li><a class="dropdown-item" href="payroll.html">Payroll</a></li>
-                            <li><a class="dropdown-item" href="Payroll-outsourcing.html"> Payroll
+                            <li><a class="dropdown-item" href="payroll">Payroll</a></li>
+                            <li><a class="dropdown-item" href="Payroll-outsourcing"> Payroll
                                 Outsourcing </a></li>
                             <li><a class="dropdown-item" href="index#advance">Salary Advance</a></li>
-                            <li><a class="dropdown-item" href="paye-calculator.html">PAYE Calculator </a></li>
+                            <li><a class="dropdown-item" href="paye-calculator  ">PAYE Calculator </a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
@@ -125,7 +125,7 @@
                     </li>
                     <li class="nav-item">
                         <a class="btn btn-warning btn-small page-scroll button-links2" target="_blank"
-                            href="request-demo.html">Request a Demo</a>
+                            href="request-demo">Request a Demo</a>
                     </li>
                     <li class="nav-item">
                         <a class="btn btn-light btn-small page-scroll button-links3" target="_blank"

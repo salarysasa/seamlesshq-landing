@@ -103,8 +103,8 @@
                             <ul class="dropdown-menu" aria-labelledby="dropdown01">
                                 <li><a class="dropdown-item" href="#onboarding">Onboarding</a></li>
                                 <li><a class="dropdown-item" href="#self_service">Employee Self Service</a></li>
-                                <li><a class="dropdown-item" href="payroll.html">Payroll</a></li>
-                                <li><a class="dropdown-item" href="Payroll-outsourcing.html"> Payroll
+                                <li><a class="dropdown-item" href="payroll">Payroll</a></li>
+                                <li><a class="dropdown-item" href="Payroll-outsourcing"> Payroll
                                     Outsourcing </a></li>
                                 <li><a class="dropdown-item" href="#advance">Salary Advance</a></li>
                             </ul>
@@ -356,7 +356,7 @@
                     }, {headers: headers_}
                 )
                 .then((resp) => {
-                    window.location.href = 'invest-record-submitted-successfully.html';
+                    window.location.href = 'invest-record-submitted-successfully';
                 }).catch(function (error) {
                     document.getElementById('subscription_form').style.display = 'none';
                     document.getElementById('not_submitted').style.display = 'block';
