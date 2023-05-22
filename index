@@ -78,7 +78,7 @@
         <div class="container">
 
             <!-- Image Logo -->
-            <a class="navbar-brand " href="index.html"><img class="logo_img" src="images/elavate/Elevate HR Header.svg"
+            <a class="navbar-brand " href="index"><img class="logo_img" src="images/elavate/Elevate HR Header.svg"
                     alt="alternative"></a>
 
             <!-- Text Logo - Use this if you don't have a graphic logo -->
@@ -95,12 +95,12 @@
                         <a class="nav-link dropdown-toggle links" id="dropdown01" data-bs-toggle="dropdown"
                             aria-expanded="false">Platform</a>
                         <ul class="dropdown-menu" aria-labelledby="dropdown01">
-                            <li><a class="dropdown-item" href="index.html#onboarding">Onboarding</a></li>
-                            <li><a class="dropdown-item" href="index.html#self_service">Employee Self Service</a></li>
+                            <li><a class="dropdown-item" href="index#onboarding">Onboarding</a></li>
+                            <li><a class="dropdown-item" href="index#self_service">Employee Self Service</a></li>
                             <li><a class="dropdown-item" href="payroll.html">Payroll</a></li>
                             <li><a class="dropdown-item" href="Payroll-outsourcing.html"> Payroll
                                 Outsourcing </a></li>
-                            <li><a class="dropdown-item" href="index.html#advance">Salary Advance</a></li>
+                            <li><a class="dropdown-item" href="index#advance">Salary Advance</a></li>
                             <li><a class="dropdown-item" href="paye-calculator.html">PAYE Calculator </a></li>
                         </ul>
                     </li>
