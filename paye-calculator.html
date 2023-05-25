@@ -61,6 +61,9 @@
     <!-- Favicon  -->
     <link rel="icon" href="images/favicon.ico">
 
+    <!-- font awesome version four icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 
 </head>
 
@@ -414,13 +417,57 @@
     <!-- end of footer -->
 
 
+    <!-- share button -->
 
+    <section class="shar_button_section" >
+        <button data-open-modal class="shar_button_section_btn1" ><i class="fa fa-share" aria-hidden="true"></i> Share</button>
+        <dialog id="favDialog" class="shar_button_section_dialog">
+            <div class="shar_button_section_dialog_section_one">
+                <div class="shar_button_section_dialog_section_one_div1">
+                    <h2 class="shar_button_section_dialog_section_one_div1_h2">
+                        Share
+                    </h2>
+                    <button data-close-modal class="shar_button_section_btn2" >
+                        <i class="fa fa-times" aria-hidden="true"></i>
+                    </button>
+                </div>
+                <ul class="shar_button_section_dialog_section_one_ul">
+                    <li class="shar_button_section_dialog_section_one_ul_li">
+                        <i class="fa fa-external-link" aria-hidden="true"></i>
+                    </li>
+                    <li class="shar_button_section_dialog_section_one_ul_li">
+                        <a href="https://wa.me/0799661152" id="links_scroll_share" target="_blank" rel="noopener noreferrer">
+                            <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                        </a>                       
+                    </li>
+                    <li class="shar_button_section_dialog_section_one_ul_li">
+                        <a href="https://twitter.com/ElevateHRAfrica" id="links_scroll_share"  target="_blank" rel="noopener noreferrer">
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li class="shar_button_section_dialog_section_one_ul_li">
+                        <a href="" target="_blank" rel="noopener noreferrer" id="links_scroll_share" >
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                </ul>
+                <div class="shar_button_section_dialog_section_one_div2">
+                    <input type="text" name="copy" disabled value="https://elevatehr.co/paye-calculator" id="copy">
+                    <label for="copy" onclick="copyText()" id="copied">Copy</label>
+                </div>                
+            </div>
+            
+        </dialog>
+    </section>
+
+    <!-- end of share button -->
 
 
 
 
 
     <!-- Scripts -->
+    <script src="/js/modal.js"></script>
     <script>
         var thisform = document.getElementById("subscription_form");
 
@@ -450,6 +497,7 @@
                 });
         });
     </script>
+    
     <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
     <script src="js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
     <script src="js/purecounter.min.js"></script> <!-- Purecounter counter for statistics numbers -->

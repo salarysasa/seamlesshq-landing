@@ -12,9 +12,10 @@ main {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   gap: 2rem;
-  width: 80%;
-  height: 90vh;
+  width: 90%;
+  height: max-content;
   margin: auto;
+  margin-bottom: 3rem;
 }
 
 /* start styling article 1 */
@@ -85,7 +86,7 @@ main {
 .main_body_article1_form_fieldset_input_gross {
    border: none;
    padding: 0rem 0rem 0rem 1rem;
-   outline: 2px #b1aeae solid;
+   border: 2px #b1aeae solid;
 }
 
 .main_body_article1_form_fieldset_input_gross::placeholder {
@@ -218,3 +219,136 @@ main {
     margin-top: 1rem;
   }
 }
+
+
+/* share button css */
+
+.shar_button_section {
+  position: fixed;
+  right: 5%;
+  z-index: 1;
+  bottom: 5%;
+}
+
+.shar_button_section_btn1 {
+  border-radius: 50%;
+  padding: 1.5rem 0.4rem;
+  border: none;
+  color: #fff;
+  font-weight: 700;
+  background-color: #FF902A;
+}
+
+.shar_button_section_btn1 > i {
+  color: #422F59;
+}
+
+.shar_button_section_btn1 {
+  transform: scale(1);
+  animation: pulse-black 1s infinite;
+}
+
+.shar_button_section_dialog_section_one {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.shar_button_section_dialog {
+  border: none;
+}
+
+.shar_button_section_dialog_section_one_div1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.shar_button_section_btn2 {
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+}
+
+.shar_button_section_dialog_section_one_ul {
+  list-style: none;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 0rem;
+}
+
+.shar_button_section_dialog_section_one_ul_li {
+  font-size: 2rem;
+  transition: all .3s ease;
+  
+}
+
+.shar_button_section_dialog_section_one_ul_li:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transform: rotate(360);
+  animation: rota 3s ease;
+}
+
+.shar_button_section_dialog_section_one_div2 {
+  border: 1px #3B2A50 solid;
+  padding: 0.5rem;
+  border-radius: 4px;
+}
+
+#copy {
+  border: none;
+  outline: none;
+  background: none;
+}
+
+#copied {
+  padding: 0.5rem;
+  width: 4rem;
+  background-color:#FF902A;
+  color: #fff;
+}
+
+@keyframes pulse-black {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+  }
+  
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+  }
+  
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+}
+
+.shar_button_section_btn1 {
+  background: #FF902A;
+  box-shadow: 0 0 0 0 #FF902A;
+  animation: pulse-yellow 2s infinite;
+}
+
+@keyframes pulse-yellow {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(255, 177, 66, 0.7);
+  }
+  
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 10px rgba(255, 177, 66, 0);
+  }
+  
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(255, 177, 66, 0);
+  }
+}
+
+
+/* end of share button css */
