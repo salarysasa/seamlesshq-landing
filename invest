@@ -14,9 +14,9 @@
 
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        
-     <!-- Primary Meta Tags -->
-<title>ElevateHR:a cloud Based HR Platform </title>
+
+       <!-- Primary Meta Tags -->
+<title>ElevateHR: a cloud Based HR Platform </title>
 <meta name="title" content="Cloud-based HR platform for the African market - ElevateHR">
 <meta name="description" content="ElevateHR; a cloud Based HR Platform that helps you to automate payroll management, leave management, onboarding and other often time-consuming HR tasks.">
 
@@ -35,8 +35,8 @@
 <meta property="twitter:image" content="https://elevatehr.co/images/elavate/Elavate_HR.png">
 
         <!-- Webpage Title -->
-        <title>Request submitted |ElevateHR</title>
-        
+        <title>Invest | ElevateHR</title>
+
         <!-- Styles -->
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -48,8 +48,10 @@
         <link href="css/styles.css" rel="stylesheet">
         <link href="css/custom.css" rel="stylesheet">
         <link href="css/demo.css" rel="stylesheet">
+        <link href="css/invest.css" rel="stylesheet">
+        <link href="css/invest.css" rel="stylesheet">
         <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-        
+
         <!-- Favicon  -->
         <link rel="icon" href="images/favicon.ico">
 
@@ -79,13 +81,13 @@
             </iframe>
         </noscript>
         <!-- End Google Tag Manager (noscript) -->
-        
+
         <!-- Navigation -->
         <nav id="navbarExample" class="navbar navbar-expand-lg fixed-top navbar-light" aria-label="Main navigation">
             <div class="container">
 
                 <!-- Image Logo -->
-                <a class="navbar-brand logo-image" href="index.html"><img src="images/elavate/Elevate HR Header.svg" alt="alternative"></a> 
+                <a class="navbar-brand logo-image" href="index"><img src="images/elavate/Elevate HR Header.svg" alt="alternative"></a>
 
                 <!-- Text Logo - Use this if you don't have a graphic logo -->
 
@@ -95,36 +97,36 @@
 
                 <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
                     <ul class="navbar-nav ms-auto navbar-nav-scroll">
-                       
+
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle links" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">Platform</a>
                             <ul class="dropdown-menu" aria-labelledby="dropdown01">
                                 <li><a class="dropdown-item" href="#onboarding">Onboarding</a></li>
                                 <li><a class="dropdown-item" href="#self_service">Employee Self Service</a></li>
-                                <li><a class="dropdown-item" href="payroll.html">Payroll</a></li>
-                                <li><a class="dropdown-item" href="Payroll-outsourcing.html"> Payroll
+                                <li><a class="dropdown-item" href="payroll">Payroll</a></li>
+                                <li><a class="dropdown-item" href="Payroll-outsourcing"> Payroll
                                     Outsourcing </a></li>
                                 <li><a class="dropdown-item" href="#advance">Salary Advance</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link links" target="_blank" href="https://community.elevatehr.co">Community</a>
+                            <a class="nav-link links" target="_blank" href="https://community.elevatehr.co/">Community</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link links" target="_blank" href="https://events.elevatehr.co/">Events</a>
                         </li>
-                        <!-- <li class="nav-item">
+                        <li class="nav-item">
                             <a class="nav-link links" target="_blank" href="https://merch.elevatehr.co/">Merchandise</a>
-                        </li> -->
+                        </li>
                         <li class="nav-item">
                             <a class="nav-link links" target="_blank" href="https://podcasts.elevatehr.co">Podcast</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link links" target="_blank" href="https://blog.elevatehr.co/">Blogs</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link links" target="_blank" href="invest.html">Invest</a>
-                        </li>
+                        <!-- <li class="nav-item">
+                            <a class="nav-link links" href="#">Invest</a>
+                        </li> -->
                         <li class="nav-item">
                             <a class="btn-outline-header page-scroll" target="_blank" href="https://app.seamlesshq.co/login">Login</a>
                         </li>
@@ -135,16 +137,119 @@
         </nav> <!-- end of navbar -->
         <!-- end of navigation -->
 
+
+         <!-- Header -->    
+         <header id="header" class="header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5">
+                        <div class="text-container">
+                            <h1>
+                                <span class="h1-large invest_header">Invest with <br/>Elevate HR</span>
+                                </h1>
+                                
+                            <p class="descr">Invest in the future of HR Innovation. We are building Africa's next HR Tech unicorn. A cloud-based HR end to end system for the African Market.
+                                It is indeed time for Africa!
+                                Come build with us</p>
+                            <a class="btn-solid-lg" target="_blank" href="#">CEO via email Kennedy@elevatehr.co</a>
+                        </div> <!-- end of text-container -->
+                    </div> <!-- end of col -->
+                    <div class="col-lg-7">
+                        <div class="image-container">
+                            <img class="img-fluid" src="images/elavate/How-.jpg" alt="seamless modules">
+                        </div> <!-- end of image-container -->
+                    </div> <!-- end of col -->
+                </div> <!-- end of row -->
+            </div> <!-- end of container -->
+        </header> <!-- end of header -->
+        <!-- end of header -->
+
+         <!-- Community -->
+         <div class="community">
+            <div class="container ">
+                <div class="row">
+                    <div class="col-lg-12 community_container">
+                        <h3>Community capital</h3>
+                    </div> <!-- end of col -->
+                    
+                    <div class="col-lg-12">
+                        <div class="image-container">
+                            <iframe 
+                                title="vimeo-player" 
+                                src="https://player.vimeo.com/video/736790018?h=a7fadb0338" 
+                                width="740" height="460" frameborder="0" allowfullscreen>
+                            </iframe>
+                        </div> <!-- end of image-container -->
+                    </div>
+                </div> <!-- end of row -->
+            </div> <!-- end of container -->
+        </div> <!-- end of basic-3 -->
+        <!-- end of invitation -->
+         <!-- Community -->
+         <div class="community">
+            <div class="container ">
+                <div class="row">
+                    <div class="col-lg-12 capital_container">
+                        <h3>Community Capital
+                        </h3>
+                        <p>Elevate HR's community capital approach presents an exciting opportunity to set a new trend in startup investing with an Africanized version of venture capital.  We are changing the narrative set by the West where only high net worth individuals get the opportunity to grow their wealth through startup investing.  Catch a glimpse of the Elevate HR community  investment gala event held at Serena Hotel.</p>  
+                    </div> <!-- end of col -->
+                </div> <!-- end of row -->
+            </div> <!-- end of container -->
+        </div> <!-- end of basic-3 -->
+
+         <!-- onboarding section -->
+         <div id="onboarding" class="basic-1">
+            <div class="container">
+                <div class="col-lg-12">
+                    <h1 class="subscribe header_text" style="text-align: center" id="header_msg">How to Invest in ElevateHR</h1>
+                </div> <!-- end of col -->
+                <div class="col-lg-12">
+                    <div class="image-container">
+                        
+                            <img class="img-fluid" src="images/elavate/How-to-invest.png" alt="seamless modules">
+                            
+                    </div> <!-- end of image-container -->
+                    <!-- <a class="btn-solid-lg "   style="text-align: center" target="_blank" href="https://docsend.com/view/s/3ueeq8vmdsqmi5pc">Invest</a> -->
+                    
+                </div>
+                 <!-- end of row -->
+            </div> 
+            <!-- end of container -->
+            <div class="community"  style=" background-color:#ffff">
+                <div class="container ">
+                    <div class="row" >
+                        
+                        <a class="btn-solid-lg "   style="text-align: center; width: 500pxpx;" target="_blank" href="#">CEO via email Kennedy@elevatehr.co</a>
+                    </div> <!-- end of row -->
+                </div> <!-- end of container -->
+            </div> <!-- end of basic-3 -->
+        </div>  
+         <!-- end of basic-1 -->
+        <!-- end of details 1 -->
+
         <!-- Invitation -->
-        <div class="basic-3 demo subscription">
+        <!-- <div class="basic-3 demo subscription">
             <div class="container">
                 <div class="row row_card">
                     <div class="col-lg-12 demo_card">
-                        <h1 class="subscribe header_text" id="demo_success">Demo request submitted successfully</h1>
-                        <p id="submitted">Your details were submitted successfully. <br> 
-                            One of our team members will reach out to you in a few hours to schedule a call. <br><br>
-                            In the meantime, <a href="https://blog.elevatehr.co/">check out our Blog</a> where we talk about fun, educational and even personal HR-related topics.</p>
-                    </div> <!-- end of col -->
+                        <h1 class="subscribe header_text" id="header_msg">Invest in ElevateHR</h1>
+                        <p id="header_paragraph" class="header_p">If you’d love to take part in the next growth of ElevateHR, <br>
+                            please fill in your information and we will get back to you.</p>
+                        <form id="subscription_form">
+                            <input placeholder="Full Name" id="Name" name="Name" required>
+                            <input placeholder="What company do you work for?" id="Company" name="Company" required><br/>
+                            <input placeholder="What is your current title?" id="Title" name="Title" required><br/>
+                            <input placeholder="Your Work Email Address" id="EmailAddress" name="EmailAddress" required>
+                            <input type="tel" placeholder="Phone Number" id="PhoneNumber" name="PhoneNumber"><br>
+                            <button class="btn-outline-lg page-scroll"  type="submit">
+                                <span id="button_submit">Submit</span>
+                                <div id="first_loader" class="first-loader"></div>
+                            </button>
+
+                        </form>
+                        
+                    </div>  end of col -->
                 </div> <!-- end of row -->
             </div> <!-- end of container -->
         </div> <!-- end of basic-3 -->
@@ -157,14 +262,14 @@
                 <div class="row">
                     <div class="col-lg-12 footer_txt">
                         <div class="footer-col first">
-                            <img src="images/seamless/Elevate_HR_footer1.png" alt="seamless logo"/>
+                            <img src="images/elavate/Elevate_HR_footer1.png" alt="elavate logo"/>
                         </div> <!-- end of footer-col -->
                         <div class="footer-col second">
                             <ul class="list-unstyled li-space-lg p-small">
-                                <li> <a href="https://app.seamlesshq.co" target="_blank">Platform</a></li>
+                                <li> <a href="https://app.elevatehr.co" target="_blank">Platform</a></li>
                                 <li> <a href="https://community.elevatehr.co" target="_blank">Community</a></li>
                                 <li> <a href="https://events.elevatehr.co/" target="_blank">Events</a></li>
-                                <li> <a href="https://merch.elevatehr.co/" target="_blank">Merchandise</a></li>
+                                <!-- <li> <a href="https://merch.elevatehr.co/" target="_blank">Merchandise</a></li> -->
                             </ul>
                         </div> <!-- end of footer-col -->
                         <div class="footer-col third">
@@ -175,15 +280,15 @@
                         </div> <!-- end of footer-col -->
                         <div class="footer-col forth">
                             <ul class="list-unstyled li-space-lg p-small">
-                                <li> <a href="mailto:admin@seamless.hq">admin@seamless.hq</a></li>
-                                <li> <a href="tel:+254112678878">+254112678878</a></li>
-                                <li> <a href="tel:tel:+254799661152">tel:+254799661152</a></li>
+                                <li> <a href="mailto:admin@elevatehr.co">admin@elevatehr.co</a></li>
+                                <li> <a href="tel:+254799661152">+254799661152</a></li>
+                                <!-- <li> <a href="tel:+254799661152">+254799661152</a></li> -->
                             </ul>
                         </div> <!-- end of footer-col -->
                         <hr class="line"/>
                         <div class="footer-col socials">
                             <span class="fa-stack">
-                                <a href="https://twitter.com/ElevateHRAfrica" target="_blank">
+                                <a href="https://twitter.com/HqSeamless/" target="_blank">
                                     <i class="fab fa-twitter fa-stack-1x"></i>
                                 </a>
                             </span>
@@ -193,7 +298,7 @@
                                 </a>
                             </span>
                             <span class="fa-stack">
-                                <a href="https://www.instagram.com/elevatehr_africa/" target="_blank">
+                                <a href="https://www.instagram.com/seamlesshq/" target="_blank">
                                     <i class="fab fa-instagram fa-stack-1x"></i>
                                 </a>
                             </span>
@@ -201,7 +306,7 @@
                     </div> <!-- end of col -->
                 </div> <!-- end of row -->
             </div> <!-- end of container -->
-        </div> <!-- end of footer -->  
+        </div> <!-- end of footer -->
         <!-- end of footer -->
 
 
@@ -210,8 +315,54 @@
             <img src="images/up-arrow.png" alt="alternative">
         </button>
         <!-- end of back to top button -->
-            
+
         <!-- Scripts -->
+        <script>
+            var thisform = document.getElementById("subscription_form");
+
+            const headers_ = {
+                'Authorization': 'Bearer keyXKQV5un7HrZTbW',
+                'Content-Type': 'application/json'
+            };
+
+            // When the form is submitted...
+            thisform.addEventListener("submit", function(event) {
+                document.getElementById('button_submit').style.display = 'none';
+                document.getElementById('first_loader').style.display = 'block';
+                var checkboxes = document.getElementsByName('modules');
+                // check all submitted modules
+                var modules = " ";
+                for (var i=0, n=checkboxes.length;i<n;i++)
+                {
+                    if (checkboxes[i].checked)
+                    {
+                        modules += checkboxes[i].value+", ";
+                    }
+                }
+                if (modules) modules = modules.substring(1);
+
+                event.preventDefault();
+
+                // POST the data
+                axios.post("https://api.airtable.com/v0/appolPw2eM5Aeo1MB/Invest%20Signups",
+                    {
+                        "fields": {
+                            "Name": document.getElementById("Name").value,
+                            "Email Address": document.getElementById("EmailAddress").value,
+                            "Company": document.getElementById("Company").value,
+                            "Phone Number": document.getElementById("PhoneNumber").value,
+                            "Title": document.getElementById("Title").value,
+                        }
+                    }, {headers: headers_}
+                )
+                .then((resp) => {
+                    window.location.href = 'invest-record-submitted-successfully';
+                }).catch(function (error) {
+                    document.getElementById('subscription_form').style.display = 'none';
+                    document.getElementById('not_submitted').style.display = 'block';
+                })});
+
+        </script>
         <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
         <script src="js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
         <script src="js/purecounter.min.js"></script> <!-- Purecounter counter for statistics numbers -->

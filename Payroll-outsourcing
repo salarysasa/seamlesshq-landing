@@ -66,7 +66,7 @@
             <div class="container">
 
                 <!-- Image Logo -->
-                <a class="navbar-brand " href="index.html"><img class="logo_img" src="images/elavate/Elevate HR Header.svg" alt="alternative"></a> 
+                <a class="navbar-brand " href="index"><img class="logo_img" src="images/elavate/Elevate HR Header.svg" alt="alternative"></a> 
 
                 <!-- Text Logo - Use this if you don't have a graphic logo -->
 
@@ -80,12 +80,12 @@
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle links" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false" >Platform</a>
                             <ul class="dropdown-menu" aria-labelledby="dropdown01">
-                                <li><a class="dropdown-item" href="index.html#onboarding">Onboarding</a></li>
-                                <li><a class="dropdown-item" href="index.html#self_service">Employee Self Service</a></li>
-                                <li><a class="dropdown-item" href="index.htmlpayroll.html">Payroll</a></li>
-                                <li><a class="dropdown-item" href="Payroll-outsourcing.html"> Payroll
+                                <li><a class="dropdown-item" href="index#onboarding">Onboarding</a></li>
+                                <li><a class="dropdown-item" href="index#self_service">Employee Self Service</a></li>
+                                <li><a class="dropdown-item" href="indexpayroll">Payroll</a></li>
+                                <li><a class="dropdown-item" href="Payroll-outsourcing"> Payroll
                                     Outsourcing </a></li>
-                                <li><a class="dropdown-item" href="index.html#advance">Salary Advance</a></li>
+                                <li><a class="dropdown-item" href="index#advance">Salary Advance</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
@@ -125,7 +125,7 @@
                     We process payroll for you, so you can focus on running your business.
                 </p>
                 <button class="outsourcing_container_section_one_subsection_one_button" type="button">
-                    <a href="request-demo.html" class="butousorce" > Get started today </a>
+                    <a href="request-demo" class="butousorce" > Get started today </a>
                 </button>
                 <div class="outsourcing_container_section_one_clients">
                     <p class="outsourcing_container_section_one_clients_p">
@@ -393,7 +393,7 @@
                             We make payroll processing easy and affordable
                         </h3>
                         <button class="outsourcing_container_section_six_button" type="button">
-                            <a href="request-demo.html" class="butousorce" > Get Started</a>
+                            <a href="request-demo" class="butousorce" > Get Started</a>
                         </button>
                     </section>
                 <!-- end of section six -->
