@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Google Tag Manager  elavate hr  nov 8th -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-TN37NNM');</script>
+    <!-- End Google Tag Manager -->
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Primary Meta Tags -->
+    <title>PAYE Calculator</title>
+    <meta name="title" content="Cloud-based HR platform for the African market - ElevateHR">
+    <meta name="description"
+        content="ElevateHR; a cloud Based HR Platform that helps you to automate payroll management, leave management, onboarding and other often time-consuming HR tasks.">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://elevatehr.co/">
+    <meta property="og:title"
+        content="ElevateHR; a cloud Based HR Platform that helps you to automate payroll management, leave management, onboarding and other often time-consuming HR tasks.|">
+    <meta property="og:description"
+        content="ElevateHR; a cloud Based HR Platform that helps you to automate payroll management, leave management, onboarding and other often time-consuming HR tasks.">
+    <meta property="og:image" content="https://elevatehr.co/images/elavate/Elavate_HR.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://elevatehr.co/">
+    <meta property="twitter:title"
+        content="ElevateHR; a cloud Based HR Platform that helps you to automate payroll management, leave management, onboarding and other often time-consuming HR tasks.|">
+    <meta property="twitter:description"
+        content="ElevateHR; a cloud Based HR Platform that helps you to automate payroll management, leave management, onboarding and other often time-consuming HR tasks.">
+    <meta property="twitter:image" content="https://elevatehr.co/images/elavate/Elavate_HR.png">
+
+    <!-- Webpage Title -->
+    <title>PAYE Calculator</title>
+
+    <!-- Styles -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Jost&display=swap"
+        rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/fontawesome-all.min.css" rel="stylesheet">
+    <link href="css/swiper.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+    <link href="css/survey.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/paye.css">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <!-- Favicon  -->
+    <link rel="icon" href="images/favicon.ico">
+
+    <!-- font awesome version four icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://kit.fontawesome.com/3c4e8cd21a.js" crossorigin="anonymous"></script>
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbarExample">
+
+
+    <!-- Google Tag Manager (noscript) nov 8th -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TN37NNM" height="0" width="0"
+            style="display:none;visibility:hidden">
+        </iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+
+    <!-- Navigation -->
+    <nav id="navbarExample" class="navbar navbar-expand-lg fixed-top navbar-light" aria-label="Main navigation">
+        <div class="container">
+
+            <!-- Image Logo -->
+            <a class="navbar-brand " href="index"><img class="logo_img" src="images/elavate/Elevate HR Header.svg"
+                    alt="alternative"></a>
+
+            <!-- Text Logo - Use this if you don't have a graphic logo -->
+
+            <button class="navbar-toggler p-0 border-0" type="button" id="navbarSideCollapse"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="navbar-collapse offcanvas-collapse mt-3" id="navbarsExampleDefault">
+                <ul class="navbar-nav ms-auto navbar-nav-scroll">
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle links" id="dropdown01" data-bs-toggle="dropdown"
+                            aria-expanded="false">Platform</a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdown01">
+                            <li><a class="dropdown-item" href="index#onboarding">Onboarding</a></li>
+                            <li><a class="dropdown-item" href="index#self_service">Employee Self Service</a></li>
+                            <li><a class="dropdown-item" href="payroll">Payroll</a></li>
+                            <li><a class="dropdown-item" href="Payroll-outsourcing"> Payroll
+                                    Outsourcing </a></li>
+                            <li><a class="dropdown-item" href="index#advance">Salary Advance</a></li>
+                            <li><a class="dropdown-item" href="paye-calculator  ">PAYE Calculator </a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link links" target="_blank" href="https://community.elevatehr.co">Community</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link links" target="_blank" href="https://podcasts.elevatehr.co">Media</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link links" target="_blank" href="https://airtable.com/shrv9m13XBA02lrd9">Market
+                            Reports</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link links" target="_blank" href="https://podcasts.elevatehr.co">Our Story</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ms-auto navbar-nav-scroll gap-2">
+                    <li class="nav-item">
+                        <a class="btn btn-outline-warning page-scroll button-links" target="_blank"
+                            href="invest.html">Invest</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-warning btn-small page-scroll button-links2" target="_blank"
+                            href="request-demo">Request a Demo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-light btn-small page-scroll button-links3" target="_blank"
+                            href="https://app.elevateHR.co/login">Login</a>
+                    </li>
+                </ul>
+            </div> <!-- end of navbar-collapse -->
+        </div> <!-- end of container -->
+    </nav> <!-- end of navbar -->
+    <!-- end of navigation -->
+
+    <body>
+        
+        <!-- MAIN SURVEY code -->
+        <main class="survey_main">
+            
+            <!-- main survey article -->
+            <article class="survey_main_article">
+                
+                <!-- main survey section -->
+                <!-- small screen -->
+                <section class="survey_main_article_section">
+                    <h2 class="survey_main_article_section_h2">
+                        Discover | <br>
+                        <span>the Pulse of Human Resource</span>
+                    </h2>
+                    <div class="survey_main_article_section_pre_div">
+                        <button class="shar_button_section_btn1 extra_btn_styling" id="btn_left1" >
+                            <i class="fa fa-play" aria-hidden="true"></i>
+                        </button>
+                        <video class="survey_main_article_section_video" poster="./images/survey/faith.png" >
+                            <source src="./images/survey/Survey Pitch.mp4" type="video/mp4">
+                            <source src="" type="video/ogg">
+                        </video>
+                    </div>                    
+                    <p class="survey_main_article_section_p">
+                        We provide HR Industry Reports which contain valuable insights and analysis on the latest trends
+                        and developments in the HR industry.
+                        <span></span>
+                        <br/>
+                        <br/>
+                        <span>Stay informed and make data-driven decisions with our comprehensive reports.</span>
+                    </p>
+                    <form action="" class="survey_main_article_section_form">
+                        <input class="survey_main_article_section_form_input" type="email" name="email" id="email" autocomplete="on" spellcheck="true" placeholder="Enter your email" required>
+                        <button class="survey_main_article_section_form_button" type="submit">Submit Email</button>
+                    </form>
+                </section>
+
+                <!-- large screen -->
+                <section class="survey_main_article_section2">
+                    <div class="survey_main_article_section2_div1">
+                        <h2 class="survey_main_article_section2_div1_h2">
+                            Discover | <br>
+                            <span>the Pulse of Human Resource</span>
+                        </h2>
+                        <p class="survey_main_article_section2_div1_p">
+                            We provide HR Industry Reports which contain valuable insights and analysis on the latest
+                            trends and developments in the HR industry
+                            <span>.</span>
+                            <br/>
+                            <span>Stay informed and make data-driven decisions with our comprehensive reports.</span>
+                        </p>
+                        <form action="" class="survey_main_article_section2_div1_form">
+                            <input class="survey_main_article_section2_div1_form_input" type="email" name="email" id="email" autocomplete="on" spellcheck="true" placeholder="Enter your email" required>
+                            <button class="survey_main_article_section2_div1_form_button" type="submit">Submit Email</button>
+                        </form>
+                    </div>
+                    <figure class=" survey_main_article_section_pre_div survey_main_article_section2_figure">
+                        <button class="shar_button_section_btn1 extra_btn_styling" id="btn_left">
+                            <i class="fa fa-play" aria-hidden="true"></i>
+                        </button>
+                        <div class="survey_main_article_section2_figure_div">
+                            <h3 class="survey_main_article_section2_figure_div_h3">Faith Muchai</h3>
+                            <p class="survey_main_article_section2_figure_div_p">Marketing Lead, ElevateHR</p>
+                        </div>
+                        <video class="survey_main_article_section_video survey_main_article_section_video_secon" poster="./images/survey/faith.png">
+                            <source src="./images/survey/Survey Pitch.mp4" type="video/mp4">
+                            <source src="" type="video/ogg">
+                        </video>
+                    </figure>
+                </section>
+            </article>
+            
+            <dialog id="dialog1">
+                <span id="close_video">
+                    &times;
+                </span>
+                <video class="survey_main_article_section_video survey_main_article_section_video_secon" id="source_video" poster="./images/survey/faith.png">
+                    <source src="./images/survey/Survey Pitch.mp4" type="video/mp4">
+                </video>
+            </dialog>
+
+            <article class="survey_main_article2">
+                <section class="survey_main_article2_section1">
+                    <figure class="survey_main_article2_section1_figure">
+                        <img class="survey_main_article2_section1_figure_img" src="./images/survey/HRTools.png" alt="HRTechnologySurvey">
+                    </figure>
+                    <h3 class="survey_main_article2_section1_h3">
+                        HR Technology Survey
+                    </h3>
+                    <div class="survey_main_article2_section1_h3_div1">
+                        <div class="survey_main_article2_section1_h3_div1_div1">
+                            <i class="fa fa-heart-o" id="survey_main_article2_section1_h3_div1_div1_icon" aria-hidden="true"></i>
+                            <span class="survey_main_article2_section1_h3_div1_div1_p">
+                                300
+                            </span>
+                        </div>
+                        <div class="survey_main_article2_section1_h3_div1_div2">
+                            <i class="fa fa-pencil" id="survey_main_article2_section1_h3_div1_div2_icon" aria-hidden="true"></i>
+                            <span class="survey_main_article2_section1_h3_div1_div1_p">
+                                1.2k responses
+                            </span>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="survey_main_article2_section1">
+                    <figure class="survey_main_article2_section1_figure">
+                        <img class="survey_main_article2_section1_figure_img" src="./images/survey/comply.png" alt="Compliance & Regulatory Survey">
+                    </figure>
+                    <h3 class="survey_main_article2_section1_h3">
+                        Compliance & Regulatory Survey
+                    </h3>
+                    <div class="survey_main_article2_section1_h3_div1">
+                        <div class="survey_main_article2_section1_h3_div1_div1">
+                            <i class="fa fa-heart-o" id="survey_main_article2_section1_h3_div1_div1_icon" aria-hidden="true"></i>
+                            <span class="survey_main_article2_section1_h3_div1_div1_p">
+                                300
+                            </span>
+                        </div>
+                        <div class="survey_main_article2_section1_h3_div1_div2">
+                            <i class="fa fa-pencil" id="survey_main_article2_section1_h3_div1_div2_icon" aria-hidden="true"></i>
+                            <span class="survey_main_article2_section1_h3_div1_div1_p">
+                                1.2k responses
+                            </span>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="survey_main_article2_section1">
+                    <figure class="survey_main_article2_section1_figure">
+                        <img class="survey_main_article2_section1_figure_img" src="./images/survey/bestpract.png" alt="HR Best Practices Survey">
+                    </figure>
+                    <h3 class="survey_main_article2_section1_h3">
+                        HR Best Practices Survey
+                    </h3>
+                    <div class="survey_main_article2_section1_h3_div1">
+                        <div class="survey_main_article2_section1_h3_div1_div1">
+                            <i class="fa fa-heart-o" id="survey_main_article2_section1_h3_div1_div1_icon" aria-hidden="true"></i>
+                            <span class="survey_main_article2_section1_h3_div1_div1_p">
+                                300
+                            </span>
+                        </div>
+                        <div class="survey_main_article2_section1_h3_div1_div2">
+                            <i class="fa fa-pencil" id="survey_main_article2_section1_h3_div1_div2_icon" aria-hidden="true"></i>
+                            <span class="survey_main_article2_section1_h3_div1_div1_p">
+                                1.2k responses
+                            </span>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="survey_main_article2_section1">
+                    <figure class="survey_main_article2_section1_figure">
+                        <img class="survey_main_article2_section1_figure_img" src="./images/survey/benefitsociety.png" alt="Employee Compensation & Benefits Survey">
+                    </figure>
+                    <h3 class="survey_main_article2_section1_h3">
+                        Employee Compensation & Benefits Survey
+                    </h3>
+                    <div class="survey_main_article2_section1_h3_div1">
+                        <div class="survey_main_article2_section1_h3_div1_div1">
+                            <i class="fa fa-heart-o" id="survey_main_article2_section1_h3_div1_div1_icon" aria-hidden="true"></i>
+                            <span class="survey_main_article2_section1_h3_div1_div1_p">
+                                300
+                            </span>
+                        </div>
+                        <div class="survey_main_article2_section1_h3_div1_div2">
+                            <i class="fa fa-pencil" id="survey_main_article2_section1_h3_div1_div2_icon" aria-hidden="true"></i>
+                            <span class="survey_main_article2_section1_h3_div1_div1_p">
+                                1.2k responses
+                            </span>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="survey_main_article2_section1">
+                    <figure class="survey_main_article2_section1_figure">
+                        <img class="survey_main_article2_section1_figure_img" src="./images/survey/diversity.png" alt="Diversity & Inclusion Survey">
+                    </figure>
+                    <h3 class="survey_main_article2_section1_h3">
+                        Diversity & Inclusion Survey
+                    </h3>
+                    <div class="survey_main_article2_section1_h3_div1">
+                        <div class="survey_main_article2_section1_h3_div1_div1">
+                            <i class="fa fa-heart-o" id="survey_main_article2_section1_h3_div1_div1_icon" aria-hidden="true"></i>
+                            <span class="survey_main_article2_section1_h3_div1_div1_p">
+                                300
+                            </span>
+                        </div>
+                        <div class="survey_main_article2_section1_h3_div1_div2">
+                            <i class="fa fa-pencil" id="survey_main_article2_section1_h3_div1_div2_icon" aria-hidden="true"></i>
+                            <span class="survey_main_article2_section1_h3_div1_div1_p">
+                                1.2k responses
+                            </span>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="survey_main_article2_section1">
+                    <figure class="survey_main_article2_section1_figure">
+                        <img class="survey_main_article2_section1_figure_img" src="./images/survey/trends.png" alt="Labour Market Trends Survey">
+                    </figure>
+                    <h3 class="survey_main_article2_section1_h3">
+                        Labour Market Trends Survey
+                    </h3>
+                    <div class="survey_main_article2_section1_h3_div1">
+                        <div class="survey_main_article2_section1_h3_div1_div1">
+                            <i class="fa fa-heart-o" id="survey_main_article2_section1_h3_div1_div1_icon" aria-hidden="true"></i>
+                            <span class="survey_main_article2_section1_h3_div1_div1_p">
+                                300
+                            </span>
+                        </div>
+                        <div class="survey_main_article2_section1_h3_div1_div2">
+                            <i class="fa fa-pencil" id="survey_main_article2_section1_h3_div1_div2_icon" aria-hidden="true"></i>
+                            <span class="survey_main_article2_section1_h3_div1_div1_p">
+                                1.2k responses
+                            </span>
+                        </div>
+                    </div>
+                </section>
+            </article>
+
+            <!-- take survey section -->
+            <section class="section_survey">
+                <button type="button" id="open_modal" class="survey_button">
+                    Take Surveys
+                </button>
+                <dialog id="dialog">
+                    <div class="section_survey_dialog_div">
+                        <h3 class="section_survey_dialog_div_h3">
+                            Choose Survey To Take
+                        </h3>
+                        <span id="close_modal">
+                            &times;
+                        </span>
+                    </div>
+                    <div>
+                        <div class="section_survey_dialog_div1">
+                            <figure class="section_survey_dialog_div1_figure">
+                                <img src="./images/survey/HRTools.png" alt="technology survey" class="section_survey_dialog_div1_figure_img" >
+                            </figure>
+                            <div class="section_survey_dialog_div1_div">
+                                <h4 class="section_survey_dialog_div1_div_h4">
+                                    HR Technology Survey
+                                </h4>
+                                <p class="section_survey_dialog_div1_div_p">
+                                    16th June 2023
+                                </p>
+                            </div>
+                            <button type="button" class="section_survey_dialog_div1_btn">
+                                Take Survey
+                            </button>
+                        </div>
+
+                        <div class="section_survey_dialog_div1">
+                            <figure class="section_survey_dialog_div1_figure">
+                                <img src="./images/survey/comply.png" alt="Compliance & Regulatory Survey" class="section_survey_dialog_div1_figure_img" >
+                            </figure>
+                            <div class="section_survey_dialog_div1_div">
+                                <h4 class="section_survey_dialog_div1_div_h4">
+                                    Compliance & Regulatory Survey
+                                </h4>
+                                <p class="section_survey_dialog_div1_div_p">
+                                    Coming soon!
+                                </p>
+                            </div>
+                            <button type="button" class="section_survey_dialog_div1_btn disable_gr">
+                                Take Survey
+                            </button>
+                        </div>
+
+                        <div class="section_survey_dialog_div1">
+                            <figure class="section_survey_dialog_div1_figure">
+                                <img src="./images/survey/bestpract.png" alt="HR Best Practices Survey" class="section_survey_dialog_div1_figure_img" >
+                            </figure>
+                            <div class="section_survey_dialog_div1_div">
+                                <h4 class="section_survey_dialog_div1_div_h4">
+                                    CHR Best Practices Survey
+                                </h4>
+                                <p class="section_survey_dialog_div1_div_p">
+                                    Coming soon!
+                                </p>
+                            </div>
+                            <button type="button" class="section_survey_dialog_div1_btn disable_gr">
+                                Take Survey
+                            </button>
+                        </div>
+
+                        <div class="section_survey_dialog_div1">
+                            <figure class="section_survey_dialog_div1_figure">
+                                <img src="./images/survey/labor.png" alt="Labour Market Trends Survey" class="section_survey_dialog_div1_figure_img" >
+                            </figure>
+                            <div class="section_survey_dialog_div1_div">
+                                <h4 class="section_survey_dialog_div1_div_h4">
+                                    Labour Market Trends Survey
+                                </h4>
+                                <p class="section_survey_dialog_div1_div_p">
+                                    Coming soon!
+                                </p>
+                            </div>
+                            <button type="button" class="section_survey_dialog_div1_btn disable_gr">
+                                Take Survey
+                            </button>
+                        </div>
+
+                        <div class="section_survey_dialog_div1">
+                            <figure class="section_survey_dialog_div1_figure">
+                                <img src="./images/survey/benefitsociety.png" alt="Employee Compensation & Benefits Survey" class="section_survey_dialog_div1_figure_img" >
+                            </figure>
+                            <div class="section_survey_dialog_div1_div">
+                                <h4 class="section_survey_dialog_div1_div_h4">
+                                    Employee Compensation & Benefits Survey
+                                </h4>
+                                <p class="section_survey_dialog_div1_div_p">
+                                    Coming soon!
+                                </p>
+                            </div>
+                            <button type="button" class="section_survey_dialog_div1_btn disable_gr">
+                                Take Survey
+                            </button>
+                        </div>
+
+                        <div class="section_survey_dialog_div1">
+                            <figure class="section_survey_dialog_div1_figure">
+                                <img src="./images/survey/diversity.png" alt="Diversity & Inclusion Survey" class="section_survey_dialog_div1_figure_img" >
+                            </figure>
+                            <div class="section_survey_dialog_div1_div">
+                                <h4 class="section_survey_dialog_div1_div_h4">
+                                    Diversity & Inclusion Survey
+                                </h4>
+                                <p class="section_survey_dialog_div1_div_p">
+                                    Coming soon!
+                                </p>
+                            </div>
+                            <button type="button" class="section_survey_dialog_div1_btn disable_gr">
+                                Take Survey
+                            </button>
+                        </div>
+
+                        <div class="section_survey_dialog_div1">
+                            <figure class="section_survey_dialog_div1_figure">
+                                <img src="./images/survey/hrsurvey.png" alt="HR KPI's Survey" class="section_survey_dialog_div1_figure_img" >
+                            </figure>
+                            <div class="section_survey_dialog_div1_div">
+                                <h4 class="section_survey_dialog_div1_div_h4">
+                                    HR KPI's Survey
+                                </h4>
+                                <p class="section_survey_dialog_div1_div_p">
+                                    Coming soon!
+                                </p>
+                            </div>
+                            <button type="button" class="section_survey_dialog_div1_btn disable_gr">
+                                Take Survey
+                            </button>
+                        </div>
+
+                        <div class="section_survey_dialog_div1">
+                            <figure class="section_survey_dialog_div1_figure">
+                                <img src="./images/survey/culture.png" alt="Culture & Organization Survey" class="section_survey_dialog_div1_figure_img" >
+                            </figure>
+                            <div class="section_survey_dialog_div1_div">
+                                <h4 class="section_survey_dialog_div1_div_h4">
+                                    Culture & Organization Survey
+                                </h4>
+                                <p class="section_survey_dialog_div1_div_p">
+                                    Coming soon!
+                                </p>
+                            </div>
+                            <button type="button" class="section_survey_dialog_div1_btn disable_gr">
+                                Take Survey
+                            </button>
+                        </div>
+                    </div>
+                </dialog>
+            </section>          
+
+            <!-- section three -->
+
+            <article class="section3_article">
+                <h2 class="section3_article_h2">
+                    HR Market Intelligence Surveys
+                </h2>
+                <section class="section3_article_h2_section1">
+                    <figure class="section3_article_h2_section1_fig">
+                        <img class="section3_article_h2_section1_fig_img" src="./images/survey/intelligence.png" alt="intelligence">
+                    </figure>
+                    <ul class="section3_article_h2_section1_ul">
+                        <li>
+                            Welcome to ElevateHR Africa, your trusted source for HR industry intelligence. 
+                        </li>
+                        <li>
+                            Your participation in the surveys will contribute to a comprehensive understanding of the current trends, challenges, and opportunities in this dynamic field.
+                        </li>
+                        <li>
+                            Your input will help shape the future of the HR industry and enable organizations to make informed decisions.
+                        </li>
+                        <li>
+                            Participating in the surveys is easy and will take approximately 10-15 minutes of your time. Your responses will be kept strictly confidential, and all data will be anonymized to ensure your privacy.
+                        </li>
+                    </ul>
+                </section>
+            </article>
+            <article class="survey_section_three">
+                <section class="survey_section_three_section">
+                    <h2 class="survey_section_three_section_h2">
+                        Participate and Get Reports
+                    </h2>
+                    <p class="survey_section_three_section_p">
+                        To show our appreciation for your survey participation, you will have the opportunity to access a copy of all reports from the surveys! 
+
+                        Participants will also be selected at random to join our panel discussions as we launch the reports. 
+                    </p>
+                    <button class="survey_section_three_section_btn">
+                        Start Survey ->
+                    </button>
+                </section>                
+            </article>
+
+            <!-- section four -->
+            <article class="article_section_four">
+                <section class="article_section_four_section">
+                    <h2 class="article_section_four_section_h2">
+                        Access reports in your inbox
+                    </h2>
+                    <p class="article_section_four_section_p">
+                        For Companies, Agencies and Professionals working together to drive positive change and create a thriving HR ecosystem! 
+                        Thank you for your participation in the HR Industry Market Intelligence Survey.
+                    </p>
+                    <form action="form" class="article_section_four_section_form">
+                        <input type="text"class="article_section_four_section_form_input1" id="name" placeholder="Name">
+                        <input type="email" class="article_section_four_section_form_input2" name="email" id="email" placeholder="Email Address">
+                        <button type="submit" class="article_section_four_section_form_btn">SEND REPORTS</button>
+                    </form>
+                </section>
+            </article>
+        </main>
+        <!-- End of Main -->
+        <!-- Footer -->
+        <div class="footer">
+            <div class="container">
+                <div class="row mt-5">
+                    <div class="col-lg-12 footer_txt below">
+                        <div class="footer-col first">
+                            <img class="logo_img1" src="images/elavate/Elevate_HR_footer1.png" alt="seamless logo" />
+                        </div> <!-- end of footer-col -->
+                        <div class="footer-col second">
+                            <ul class="list-unstyled li-space-lg p-small">
+                                <li> <a href="https://app.seamlesshq.co" target="_blank">Platform</a></li>
+                                <li> <a href="https://community.elevatehr.co" target="_blank">Community</a></li>
+                                <li> <a href="https://events.elevatehr.co/" target="_blank">Events</a></li>
+
+                            </ul>
+                        </div> <!-- end of footer-col -->
+                        <div class="footer-col third">
+                            <ul class="list-unstyled li-space-lg p-small">
+                                <li> <a href="https://podcasts.elevatehr.co" target="_blank">Podcast</a></li>
+                                <li> <a href="https://blog.elevatehr.co/" target="_blank">Blogs</a></li>
+                            </ul>
+                        </div> <!-- end of footer-col -->
+                        <div class="footer-col forth">
+                            <ul class="list-unstyled li-space-lg p-small">
+                                <li> <a href="mailto:admin@seamless.hq">admin@elevatehr.co</a></li>
+                                <li> <a href="tel:+254799661152">+254799661152</a></li>
+                            </ul>
+                        </div> <!-- end of footer-col -->
+                        <hr class="line" />
+                        <div class="footer-col socials">
+                            <span class="fa-stack">
+                                <a href="https://twitter.com/ElevateHRAfrica" target="_blank">
+                                    <i class="fab fa-twitter fa-stack-1x"></i>
+                                </a>
+                            </span>
+                            <span class="fa-stack">
+                                <a href="https://www.linkedin.com/company/elevatehrafrica/" target="_blank">
+                                    <i class="fab fa-linkedin fa-stack-1x"></i>
+                                </a>
+                            </span>
+                            <span class="fa-stack">
+                                <a href="https://www.instagram.com/elevatehr_africa/" target="_blank">
+                                    <i class="fab fa-instagram fa-stack-1x"></i>
+                                </a>
+                            </span>
+                        </div> <!-- end of footer-col -->
+                    </div> <!-- end of col -->
+                </div> <!-- end of row -->
+            </div> <!-- end of container -->
+        </div> <!-- end of footer -->
+        <!-- end of footer -->
+
+        <!-- Scripts -->
+        <script src="js/survey.js"></script> <!-- modal scripts -->
+        <script>
+            var thisform = document.getElementById("subscription_form");
+
+            const headers_ = {
+                'Authorization': 'Bearer keyeRW28wn6OUUZ1M',
+                'Content-Type': 'application/json'
+            };
+
+            // When the form is submitted...
+            thisform.addEventListener("submit", function (event) {
+                document.getElementById('button_submit').style.display = 'none';
+                document.getElementById('first_loader').style.display = 'block';
+                event.preventDefault();
+
+                // POST the data
+                axios.post("https://api.airtable.com/v0/app2H52gozfxotnm9/Subscribers",
+                    {
+                        "fields": {
+                            "Name": document.getElementById("Name").value,
+                            "EmailAddress": document.getElementById("EmailAddress").value
+                        }
+                    }, { headers: headers_ }
+                )
+                    .then((resp) => {
+                        document.getElementById('subscription_form').style.display = 'none';
+                        document.getElementById('submitted').style.display = 'block';
+                    });
+            });
+        </script>
+
+        <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
+        <script src="js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
+        <script src="js/purecounter.min.js"></script> <!-- Purecounter counter for statistics numbers -->
+        <script src="js/replaceme.min.js"></script> <!-- ReplaceMe for rotating text -->
+        <script src="js/scripts.js"></script> <!-- Custom scripts -->
+    </body>
+
+</html>
