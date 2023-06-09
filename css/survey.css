@@ -327,7 +327,7 @@
   gap: 1rem;
   text-align: center;
   width: 90%;
-  animation: slide 10s linear infinite forwards;
+  animation: slide 10s linear infinite both;
 }
 
 .survey_main_article2_section1_figure {
@@ -747,4 +747,85 @@ buttons take survey
   cursor: pointer;
   color:#FF800B;
   font-weight: 700;
+}
+
+@media only screen and (min-width: 1440px) {
+  .survey_main {
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .survey_main_article_section_h2 {
+    font-size: 4.125rem;
+    line-height: 4.125rem;
+  }
+
+  .survey_main_article_section_h2 > span {
+    font-size: 4rem;
+    line-height: 4.25rem;
+  }
+
+  .survey_main_article_section2_div1_p,
+  .survey_main_article_section_form_input::placeholder,
+  .shar_button_section_btn1,
+  .survey_main_article_section2_figure_div_h3,
+  .survey_main_article_section2_figure_div_p {
+    font-size: 1.725rem;
+    line-height:2rem;
+  }
+
+  .survey_main_article_section2_figure_div_p {
+    font-size: 0.938rem;
+  }
+
+  .section3_article_h2_section1_ul > li,
+  .survey_section_three_section_p,
+  .article_section_four_section_p {
+    font-size: 1.5rem;
+  }
+  
+}
+
+@media only screen and (min-width: 1600px) {
+  .extra_btn_styling {
+    left: 40%;
+  }
+}
+
+@media only screen and (min-width: 1800px) {
+  .extra_btn_styling {
+    left: 35%;
+  }
+}
+
+/* type functionality */
+.type {
+  white-space: nowrap;
+  overflow: hidden; 
+  padding: 0%;
+  line-height: 1.2;
+  margin: 0%;
+}
+
+.anim_type {
+  animation: typewriter 4s steps(44) 1s 1 normal both, blinkTextCursor 500ms steps(44) infinite normal;
+}
+
+@keyframes typewriter{
+  from {
+    width: 0;
+  }
+  to { 
+    width: 8em;
+  }
+}
+
+@keyframes blinkTextCursor{
+  from {
+    border-right-color: #FF800B;
+  }
+  to {
+    border-right-color: transparent;
+  }
 }
