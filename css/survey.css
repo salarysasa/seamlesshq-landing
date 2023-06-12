@@ -252,7 +252,7 @@
 
 }
 
-@media only screen and (min-width: 1330px) {
+@media only screen and (min-width: 1120px) {
   .survey_main_article_section2_figure {
     height: 90%;
   }
@@ -285,7 +285,7 @@
 
   .survey_main_article_section2_figure_div_p {
     font-size: 0.938rem;
-    line-height: 1.75rem;
+    line-height: 1.35rem;
     color: #FF800B;
     margin: 0%;
     padding: 0%;
@@ -296,7 +296,7 @@
 
 }
 
-@media only screen and (max-width: 1330px) {
+@media only screen and (max-width: 1120px) {
   .survey_main_article_section2_figure_div {
     display: none;
   }
@@ -481,7 +481,7 @@ buttons take survey
   .section3_article_h2_section1_ul  {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
   }
 
   .section3_article_h2_section1_ul > li {
