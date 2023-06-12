@@ -854,3 +854,10 @@ buttons take survey
   width: 90%;
 }
 
+.survey_main_article_section_form_input::placeholder {
+  font-size: 1.2rem;
+}
+
+.survey_main_article_section2_div1_form_input::placeholder {
+  font-size: 1rem;
+}
