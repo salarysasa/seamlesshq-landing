@@ -94,16 +94,18 @@
                                 <li><a class="dropdown-item" href="paye-calculator  ">PAYE Calculator </a></li>
                             </ul>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link links" target="_blank" href="https://community.elevatehr.co">Community</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle links" id="dropdown01" data-bs-toggle="dropdown"
+                                aria-expanded="false">Community</a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdown01">
+                                <li><a class="dropdown-item" href="https://community.elevatehr.co/">Join HR Community</a></li>
+                                <li><a class="dropdown-item" href="https://podcasts.elevatehr.co/">Podcast</a></li>
+                                <li><a class="dropdown-item" href="https://blog.elevatehr.co/">Blogs</a></li>
+                            </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link links" target="_blank" href="https://merch.seamlesshq.co">Media</a>
+                            <a class="nav-link links" target="_blank" href="https://events.elevatehr.co/">Events</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link links" target="_blank" href="https://podcasts.elevatehr.co">Our Story</a>
-                        </li>
-                    </ul>
                     <ul class="navbar-nav ms-auto navbar-nav-scroll gap-2" >
                         <li class="nav-item">
                             <a class="btn btn-outline-warning page-scroll button-links" target="_blank" href="https://app.elevateHR.co/login">Invest</a>
