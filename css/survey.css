@@ -79,7 +79,7 @@
 
 .survey_main_article_section_p,
 .survey_main_article_section2_div1_p {
-  font-size: 2rem;
+  font-size: 1.25rem;
   line-height: 1.75rem;
   font-weight: 400;
   color: #000;
@@ -108,12 +108,12 @@
   font-family: 'DM Sans', sans-serif;
   border-radius: 10px;
   border: none;
-  font-size: 2rem;
+  font-size: 1.25rem;
 }
 
 .survey_main_article_section_form_input::placeholder,
 .survey_main_article_section2_div1_form_input::placeholder {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
 
 .survey_main_article_section2 {
@@ -170,8 +170,8 @@
 
   .survey_main_article_section_p,
   .survey_main_article_section2_div1_p {
-    font-size: 1.125rem;
-    line-height: 1.5rem;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
     font-weight: 400;
     color: #000;
     font-family: 'DM Sans', sans-serif;
@@ -179,12 +179,12 @@
 
   .survey_main_article_section_form_input::placeholder,
   .survey_main_article_section2_div1_form_input::placeholder {
-    font-size: 1rem;
+    font-size: 1.25rem;
   }
 
   .survey_main_article_section_form_button,
   .survey_main_article_section2_div1_form_button {
-    font-size: 1rem;
+    font-size: 1.25rem;
   }
 
 }
@@ -200,7 +200,7 @@
   .survey_main_article_section_p,
   .survey_main_article_section2_div1_p {
     font-size: 1.25rem;
-    line-height: 1.25rem;
+    line-height: 1.75rem;
     font-weight: 400;
     color: #000;
     font-family: 'DM Sans', sans-serif;
@@ -771,8 +771,8 @@ buttons take survey
   .shar_button_section_btn1,
   .survey_main_article_section2_figure_div_h3,
   .survey_main_article_section2_figure_div_p {
-    font-size: 1.725rem;
-    line-height:2rem;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 
   .survey_main_article_section2_figure_div_p {
@@ -828,4 +828,28 @@ buttons take survey
   to {
     border-right-color: transparent;
   }
+}
+
+/* additional section styling */
+.survey_survey_content_section {
+  align-items: left;
+  justify-content: center;
+  width: 80%;
+  margin: auto;
+  display: flex; 
+  flex-direction: column;
+  padding: 2rem 0rem;
+}
+
+.survey_survey_content_section_h2 {
+  text-align: left;
+  font-size: 2.375rem;
+  line-height: 2.25rem;
+  color: #FF800B;
+}
+
+.survey_survey_content_section_p {
+  text-align: left;
+  font-size: 1.25rem;
+  width: 90%;
 }
