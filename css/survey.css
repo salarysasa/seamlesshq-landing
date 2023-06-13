@@ -109,6 +109,15 @@
   border-radius: 10px;
   border: none;
   font-size: 1.25rem;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.survey_main_article_section_form_button:hover,
+.survey_main_article_section2_div1_form_button:hover {
+  text-decoration: none;
+  color: #fff;
+  background-color: #d16909;
 }
 
 .survey_main_article_section_form_input::placeholder,
