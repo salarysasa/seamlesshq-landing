@@ -102,11 +102,11 @@
 
 .survey_main_article_section_form_button,
 .survey_main_article_section2_div1_form_button {
-  padding: 1rem 1.873rem 1rem 1.875rem;
+  padding: 0.5rem 1.873rem 0.5rem 1.875rem;
   background-color: #FF800B;
   color: #fff;
   font-family: 'DM Sans', sans-serif;
-  border-radius: 10px;
+  border-radius: 0.25rem;
   border: none;
   font-size: 1.25rem;
   text-decoration: none;
@@ -204,6 +204,7 @@
     font-size: 3rem;
     line-height: 3.125rem;
     text-align: left;
+    padding-bottom: 0.5rem;
   }
 
   .survey_main_article_section_p,
@@ -226,6 +227,10 @@
     font-size: 1.125rem;
   }
 
+}
+
+.survey_main_article_section2_div1_form_button {
+  padding: 1rem 2.625rem 1rem 2.625rem;
 }
 
 @media only screen and (min-width:1280px) {
@@ -321,22 +326,39 @@
 .survey_main_article2 {
   display: flex;
   padding: 3rem 0rem;
-  width: 80%;
-  margin: auto;
-  gap: 1rem;
+  width: 100%;
+  gap: 2rem;
   overflow: hidden;
-  /* display: flex; */
-  width: 1500px;
+  /* width: 1500px; */
   margin: 0 auto;
+  transform: translate3d(0, 0, 0);
+  transition: all 0.3s ease;
+  background: linear-gradient(360deg, #F1F1F1 0%, rgba(241, 241, 241, 0) 100%);
+}
+
+.survey_main_article2_divcover {
+  height: 100%;
+  transform: translate3d(0, 0, 0);
+  display: flex;
+  animation: slide 10s linear infinite;
+  gap: 2rem;
 }
 
 .survey_main_article2_section1 {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  text-align: center;
-  width: 90%;
-  animation: slide 10s linear infinite both;
+  padding: 1rem;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+  width: 21rem;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  transition: all 0.3s ease;
+}
+
+.survey_main_article2_section1:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .survey_main_article2_section1_figure {
@@ -370,6 +392,7 @@
   display: flex;
   align-items: center;
   gap: 1rem;
+  cursor: pointer;
 }
 
 .survey_main_article2_section1_h3_div1_div1_p {
@@ -379,21 +402,16 @@
   font-weight: 500;
 }
 
-/* @keyframes slide {
-  0% {
-    transform: translate3d(0, 0, 0);
-  }
-  100% {
-    transform: translate3d(-13.75rem, 0, 0);
-  }
-} */
+.survey_main_article2:hover .survey_main_article2_divcover {
+  animation-play-state: paused;
+}
 
 @keyframes slide {
   0% {
     transform: translateX(0%);
   }
   100% {
-    transform: translateX(-13.75rem);
+    transform: translateX(-100%);
   }
 }
 
@@ -877,4 +895,8 @@ buttons take survey
 
 .survey_main_article_section2_div1_form_input::placeholder {
   font-size: 1rem;
+}
+
+.survey_main_article_section2 {
+  background: linear-gradient(180deg, rgba(170, 145, 201, 0) -147.05%, #FFFFFF 58.71%) !important;
 }

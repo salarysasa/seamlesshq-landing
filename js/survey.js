@@ -7,6 +7,7 @@ const close_modal = document.getElementById("close_modal");
 const close_video = document.getElementById("close_video");
 const play_btn = document.getElementById("source_video");
 const play_btn1 = document.getElementById("video1");
+const heartIcons = document.querySelectorAll('.survey_main_article2_section1_h3_div1_div1 i.fa-heart-o');
 
 open_modal.addEventListener("click", () => {
   modal.showModal();
@@ -51,4 +52,22 @@ modal.addEventListener("click", e => {
     e.clientY > bound.bottom) {
       modal.close();
     }
+});
+
+// add click event listener to each icon and update count
+heartIcons.forEach((icon, index) => {
+  // get the sibling span element containing the count
+  const countElement = icon.nextElementSibling;
+
+  // get the count value from localStorage or set it to 0 if it is not set
+  let storedCount = parseInt(localStorage.getItem(`icon_${index}`), 10) || 100;
+  countElement.textContent = storedCount;
+
+  // add click event listener to icon and update count
+  icon.addEventListener('click', () => {
+    // increment the count and update the DOM and localStorage
+    storedCount++;
+    countElement.textContent = storedCount;
+    localStorage.setItem(`icon_${index}`, storedCount);
+  });
 });
