@@ -656,6 +656,7 @@ buttons take survey
 }
 
 .article_section_four_section_form_input1::placeholder,
+.article_section_four_section_form_input3::placeholder,
 .article_section_four_section_form_input2::placeholder,
 .article_section_four_section_form_btn {
   font-size: 1rem;
@@ -665,6 +666,7 @@ buttons take survey
 }
 
 .article_section_four_section_form_input1::placeholder,
+.article_section_four_section_form_input3::placeholder,
 .article_section_four_section_form_input2::placeholder {
   color: #757575;
 }

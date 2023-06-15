@@ -64,6 +64,7 @@
 
     <!-- font awesome version four icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     <script src="https://kit.fontawesome.com/3c4e8cd21a.js" crossorigin="anonymous"></script>
 </head>
 
@@ -930,11 +931,11 @@
                         The reports are for Companies, Agencies and Professionals working together to drive positive change and create a thriving HR ecosystem. <br>
                         Participate in atleast one survey to access reports.
                     </p>
-                    <form action="form" class="article_section_four_section_form">
-                        <input type="text"class="article_section_four_section_form_input1" id="firstname" placeholder="First Name">
-                        <input type="text"class="article_section_four_section_form_input1" id="lastname" placeholder="Second Name">
-                        <input type="email" class="article_section_four_section_form_input2" name="email" id="email" placeholder="Email Address">
-                        <button type="submit" class="article_section_four_section_form_btn">SEND REPORTS</button>
+                    <form class="article_section_four_section_form" id="update_form" >
+                        <input type="text" class="article_section_four_section_form_input1" value="" name="lastname" id="firstname" placeholder="First Name" >
+                        <input type="text" class="article_section_four_section_form_input3" value="" name="firstname" id="lastname" placeholder="Second Name">
+                        <input type="email" class="article_section_four_section_form_input2" value="" name="email" id="email" placeholder="Email Address">
+                        <button type="submit" id="update_of_reports" class="article_section_four_section_form_btn">SEND REPORTS</button>
                     </form>
                 </section>
             </article>
@@ -994,32 +995,52 @@
 
         <!-- Scripts -->
         <script src="js/survey.js"></script> <!-- modal scripts -->
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
         <script>
-            var thisform = document.getElementById("subscription_form");
-
-            const headers_ = {
-                'Authorization': 'Bearer keyeRW28wn6OUUZ1M',
+            let thisform = document.getElementById("update_form");
+            let btn_update = document.getElementById("update_of_reports");
+            const headerss = {
+                'Authorization': 'Bearer patmaKCuhbf0poV1D.37d94e3c3c15472263bbef89a937fd2689374117204b0ec4089a35d363ca0bb6',
                 'Content-Type': 'application/json'
             };
 
             // When the form is submitted...
             thisform.addEventListener("submit", function (event) {
-                document.getElementById('button_submit').style.display = 'none';
-                document.getElementById('first_loader').style.display = 'block';
+                // document.getElementById('button_submit').style.display = 'none';
+                // document.getElementById('first_loader').style.display = 'block';
                 event.preventDefault();
-
+                btn_update.disabled=false
+                btn_update.innerText="Submitted"
+                btn_update.style.backgroundColor="grey"
                 // POST the data
-                axios.post("https://api.airtable.com/v0/app2H52gozfxotnm9/Subscribers",
+                axios.post("https://api.airtable.com/v0/appolPw2eM5Aeo1MB/HR Industry Reports-Subscribers",
                     {
                         "fields": {
-                            "Name": document.getElementById("Name").value,
-                            "EmailAddress": document.getElementById("EmailAddress").value
+                            "first name": document.getElementById("firstname").value,
+                            "last name": document.getElementById("lastname").value,
+                            "email": document.getElementById("email").value
                         }
-                    }, { headers: headers_ }
+                    }, { headers: headerss }
                 )
                     .then((resp) => {
-                        document.getElementById('subscription_form').style.display = 'none';
-                        document.getElementById('submitted').style.display = 'block';
+                        Toastify({
+                        text: "Succesfully submitted your request. Check your email for reports.",
+                        duration: 13000,
+                        destination: "https://github.com/apvarun/toastify-js",
+                        newWindow: true,
+                        close: true,
+                        gravity: "top", // `top` or `bottom`
+                        position: "right", // `left`, `center` or `right`
+                        stopOnFocus: true, // Prevents dismissing of toast on hover
+                        style: {
+                            background: "linear-gradient(to right,#FF800B, #422F59)",
+                        },
+                        onClick: function(){} // Callback after click
+                        }).showToast();
+                        thisform.reset();
+                    }).catch(err => err).finally(() => {
+                        btn_update.disabled=true
                     });
             });
         </script>
@@ -1031,3 +1052,4 @@
     </body>
 
 </html>
+<!-- patFjFtftZ6v2mpXD.3b7da5683c1f5957346c3965f404d99b6cae41352562d8d840bee248e2b31517 -->
