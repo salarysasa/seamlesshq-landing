@@ -1029,6 +1029,7 @@ buttons take survey
 
 .survey_links {
   text-decoration: none;
+  color: #fff;
 }
 
 .survey_links:hover {
