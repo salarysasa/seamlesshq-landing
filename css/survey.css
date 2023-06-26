@@ -1026,3 +1026,13 @@ buttons take survey
     text-align: center;
   }
 }
+
+.survey_links {
+  text-decoration: none;
+  color: #fff;
+}
+
+.survey_links:hover {
+  text-decoration: none;
+  color: #fff;
+}
