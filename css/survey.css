@@ -365,6 +365,7 @@
 .survey_main_article2_section1_figure {
   width: 80%;
   margin: auto;
+  cursor: pointer;
   flex: 0.3;
 }
 

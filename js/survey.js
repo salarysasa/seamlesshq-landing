@@ -1,4 +1,4 @@
-const open_modal = document.getElementById("open_modal");
+const open_modal = document.querySelectorAll("#open_modal");
 const open_vid = document.getElementById("btn_left");
 const open_vid1 = document.getElementById("btn_left1");
 const modal = document.getElementById("dialog");
@@ -9,9 +9,11 @@ const play_btn = document.getElementById("source_video");
 const play_btn1 = document.getElementById("video1");
 const heartIcons = document.querySelectorAll('.survey_main_article2_section1_h3_div1_div1 i.fa-heart-o');
 
-open_modal.addEventListener("click", () => {
-  modal.showModal();
-});
+open_modal.forEach((mod) => {
+  mod.addEventListener("click", () => {
+    modal.showModal();
+  })
+})
 
 open_vid.addEventListener("click", () => {
   vid.showModal();
