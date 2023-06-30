@@ -73,3 +73,4 @@ heartIcons.forEach((icon, index) => {
     localStorage.setItem(`icon_${index}`, storedCount);
   });
 });
+

@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@300;400;500;600;700&display=swap');
 
-
+.swiper-button-next, .swiper-container-rtl,
+.swiper-button-prev {
+  color: #422F59 !important;
+}
 /* 
   font-family: 'DM Sans', sans-serif;
   font-family: 'Inter', sans-serif;
@@ -110,6 +113,10 @@
   font-size: 1.25rem;
   text-decoration: none;
   transition: 0.3s ease;
+}
+
+.survey_main_article_section_form_button {
+  user-select: none;
 }
 
 .survey_main_article_section_form_button:hover,
@@ -339,7 +346,6 @@
   height: 100%;
   transform: translate3d(0, 0, 0);
   display: flex;
-  animation: slide 30s linear infinite;
   gap: 2rem;
   /* remove margin from child elements */
   /* margin-left: 0;
@@ -353,7 +359,8 @@
   justify-content: space-between;
   align-items: baseline;
   gap: 1rem;
-  width: 21rem;
+  width: 20rem !important;
+  height: 27rem !important;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   transition: all 0.3s ease;
 }
@@ -418,14 +425,14 @@
   animation-play-state: paused;
 }
 
-@keyframes slide {
+/* @keyframes slide {
   0% {
     transform: translateX(0%);
   }
   100% {
     transform: translateX(-100%);
   }
-}
+} */
 
 /* 
 
@@ -504,13 +511,30 @@ buttons take survey
     width: 70%;
     margin: auto;
   }
+
+  .survey_main_article2_section1 {
+    width: 28rem !important;
+    height: 32rem !important;
+  }
 }
+
+@media only screen and (min-width: 576px){
+  .survey_main_article2_section1 {
+    width: 28rem !important;
+    height: 36rem !important;
+  }
+}
+
 
 @media only screen and (min-width: 1024px) {
   .section3_article_h2_section1 {
     display: flex;
     flex-direction: row;
+  }
 
+  .survey_main_article2_section1 {
+    width: 31rem !important;
+    height: 38rem !important;
   }
 
   .section3_article_h2_section1_fig {
@@ -621,7 +645,7 @@ buttons take survey
 }
 
 .article_section_four_section_h2 {
-  color: #fff;
+  color: #422f59;
   font-size: 3rem;
   line-height: 2.125rem;
   font-weight: 400;
@@ -633,7 +657,7 @@ buttons take survey
   font-weight: 400;
   font-size: 1.125rem;
   line-height: 1.625rem;
-  color: #fff;
+  color: #422f59;
   font-family: 'DM Sans', sans-serif;
   text-align: center;
   width: 80%;
