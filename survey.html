@@ -711,7 +711,7 @@
                     </p>
                     <form class="article_section_four_section_form" id="update_form" >
                         <input type="text" class="article_section_four_section_form_input1" value="" name="lastname" id="firstname" placeholder="First Name"  required>
-                        <input type="text" class="article_section_four_section_form_input3" value="" name="firstname" id="lastname" placeholder=" Name" required>
+                        <input type="text" class="article_section_four_section_form_input3" value="" name="firstname" id="lastname" placeholder="Last Name" required>
                         <input type="email" class="article_section_four_section_form_input2" value="" name="email" id="email" placeholder="Email Address" required>
                         <button type="submit" id="update_of_reports" class="article_section_four_section_form_btn">SEND REPORTS</button>
                     </form>
@@ -827,11 +827,13 @@
         <script src="js/scripts.js"></script> <!-- Custom scripts -->
         <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
+        
         <!-- Initialize Swiper -->
         <script>
           var swiper = new Swiper(".mySwiper", {
-            slidesPerView: 3,
-            spaceBetween: 10,
+            slidesPerView: "auto",
+            centeredSlides: true,
+            spaceBetween: 30,
             loop: true,
             navigation: {
                 nextEl: ".swiper-button-next",
