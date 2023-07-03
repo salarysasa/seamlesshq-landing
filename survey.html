@@ -57,7 +57,7 @@
     <link href="css/custom.css" rel="stylesheet">
     <link href="css/survey.css" rel="stylesheet">
     <link rel="stylesheet" href="css/paye.css">
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js" defer></script>
 
     <!-- Favicon  -->
     <link rel="icon" href="images/favicon.ico">
@@ -66,6 +66,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     <script src="https://kit.fontawesome.com/3c4e8cd21a.js" crossorigin="anonymous"></script>
+      <!-- Link Swiper's CSS -->
+  `<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
 </head>
 
 <body data-bs-spy="scroll" data-bs-target="#navbarExample">
@@ -180,7 +183,7 @@
                         <span>Stay informed and make data-driven decisions with our comprehensive reports.</span>
                     </p>
                     <form action="" class="survey_main_article_section_form">
-                        <a href="https://airtable.com/shrv9m13XBA02lrd9" target="_blank" class="survey_main_article_section_form_button" type="submit">Participate</a>
+                        <a href="#participate" id="open_modal" class="survey_main_article_section_form_button" type="submit">Participate</a>
                     </form>
                 </section>
 
@@ -199,7 +202,7 @@
                             <span>Stay informed and make data-driven decisions with our comprehensive reports.</span>
                         </p>
                         <form action="" class="survey_main_article_section2_div1_form">
-                            <a href="https://airtable.com/shrv9m13XBA02lrd9" target="_blank" class="survey_main_article_section2_div1_form_button" type="submit">Participate</a>
+                            <a href="#participate" id="open_modal" class="survey_main_article_section2_div1_form_button" type="submit">Participate</a>
                         </form>
                     </div>
                     <figure class=" survey_main_article_section_pre_div survey_main_article_section2_figure">
@@ -236,49 +239,10 @@
                 </p>
             </section>
 
-            <article class="survey_main_article2">
-                <div class="survey_main_article2_divcover">
-                <section class="survey_main_article2_section1">
-                    <figure class="survey_main_article2_section1_figure" id="open_modal" >
-                        <img class="survey_main_article2_section1_figure_img" src="./images/survey/HRTools.png" alt="HRTechnologySurvey">
-                    </figure>
-                    <h3 class="survey_main_article2_section1_h3">
-                        HR Technology Survey
-                    </h3>
-                    <div class="survey_main_article2_section1_h3_div1">
-                        <div class="survey_main_article2_section1_h3_div1_div1">
-                            <i class="fa fa-heart-o" id="survey_main_article2_section1_h3_div1_div1_icon" aria-hidden="true"></i>
-                            <span class="survey_main_article2_section1_h3_div1_div1_p">
-                                300
-                            </span>
-                        </div>
-                        <div class="survey_main_article2_section1_h3_div1_div2">
-                            <i class="fa fa-pencil" id="survey_main_article2_section1_h3_div1_div2_icon" aria-hidden="true"></i>
-                            <span class="survey_main_article2_section1_h3_div1_div1_p">
-                                1.2k responses
-                            </span>
-                        </div>
-                        <div class="survey_main_article2_section1_h3_div1_div2 special_anime">
-                            <i class="fa-solid fa-share" id="survey_main_article2_section1_h3_div1_div1_icon" aria-hidden="true"></i>
-                            <span class="survey_main_article2_section1_h3_div1_div1_p">
-                                Share
-                            </span>
-                            <div class="container1">
-                                <a href="https://wa.me/0799661152?text=Discover%20the%20ultimate%20Hr%20solution%20with%20ElevateHR%27s%20Participate%20in%20Surveys%20and%20be%20uptodate%20with%20current%20Hr%20trends." id="lin_link" target="_blank" rel="noopener noreferrer">
-                                    <i class="fab fa-whatsapp" id="fax"></i>
-                                </a>
-                                <a href="https://twitter.com/intent/tweet?url=https://elevatehr.co/survey.html&text=Discover%20the%20ultimate%20Hr%20solution%20with%20ElevateHR%27s%20Participate%20in%20Surveys%20and%20be%20uptodate%20with%20current%20Hr%20trends." id="lin_link" target="_blank" rel="noopener noreferrer">
-                                    <i class="fab fa-twitter" id="fax"></i>
-                                </a>
-                                <a href="http://www.facebook.com/sharer.php?u=https://elevatehr.co/survey.html" target="_blank" rel="noopener noreferrer" id="lin_link" >
-                                    <i class="fab fa-facebook-f" id="fax"></i>
-                                </a>                                
-                            </div>
-                        </div>
-                    </div>
-                </section>
+            <article class="survey_main_article2 swiper mySwiper">
+                <div class="survey_main_article2_divcover swiper-wrapper">
 
-                <section class="survey_main_article2_section1">
+                <section class="survey_main_article2_section1 swiper-slide">
                     <figure class="survey_main_article2_section1_figure" id="open_modal" >
                         <img class="survey_main_article2_section1_figure_img" src="./images/survey/comply.png" alt="Compliance & Regulatory Survey">
                     </figure>
@@ -318,7 +282,47 @@
                     </div>
                 </section>
 
-                <section class="survey_main_article2_section1">
+                <section class="survey_main_article2_section1 swiper-slide">
+                    <figure class="survey_main_article2_section1_figure" id="open_modal" >
+                        <img class="survey_main_article2_section1_figure_img" src="./images/survey/HRTools.png" alt="HRTechnologySurvey">
+                    </figure>
+                    <h3 class="survey_main_article2_section1_h3">
+                        HR Technology Survey
+                    </h3>
+                    <div class="survey_main_article2_section1_h3_div1">
+                        <div class="survey_main_article2_section1_h3_div1_div1">
+                            <i class="fa fa-heart-o" id="survey_main_article2_section1_h3_div1_div1_icon" aria-hidden="true"></i>
+                            <span class="survey_main_article2_section1_h3_div1_div1_p">
+                                300
+                            </span>
+                        </div>
+                        <div class="survey_main_article2_section1_h3_div1_div2">
+                            <i class="fa fa-pencil" id="survey_main_article2_section1_h3_div1_div2_icon" aria-hidden="true"></i>
+                            <span class="survey_main_article2_section1_h3_div1_div1_p">
+                                1.2k responses
+                            </span>
+                        </div>
+                        <div class="survey_main_article2_section1_h3_div1_div2 special_anime">
+                            <i class="fa-solid fa-share" id="survey_main_article2_section1_h3_div1_div1_icon" aria-hidden="true"></i>
+                            <span class="survey_main_article2_section1_h3_div1_div1_p">
+                                Share
+                            </span>
+                            <div class="container1">
+                                <a href="https://wa.me/0799661152?text=Discover%20the%20ultimate%20Hr%20solution%20with%20ElevateHR%27s%20Participate%20in%20Surveys%20and%20be%20uptodate%20with%20current%20Hr%20trends." id="lin_link" target="_blank" rel="noopener noreferrer">
+                                    <i class="fab fa-whatsapp" id="fax"></i>
+                                </a>
+                                <a href="https://twitter.com/intent/tweet?url=https://elevatehr.co/survey.html&text=Discover%20the%20ultimate%20Hr%20solution%20with%20ElevateHR%27s%20Participate%20in%20Surveys%20and%20be%20uptodate%20with%20current%20Hr%20trends." id="lin_link" target="_blank" rel="noopener noreferrer">
+                                    <i class="fab fa-twitter" id="fax"></i>
+                                </a>
+                                <a href="http://www.facebook.com/sharer.php?u=https://elevatehr.co/survey.html" target="_blank" rel="noopener noreferrer" id="lin_link" >
+                                    <i class="fab fa-facebook-f" id="fax"></i>
+                                </a>                                
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="survey_main_article2_section1 swiper-slide">
                     <figure class="survey_main_article2_section1_figure" id="open_modal" >
                         <img class="survey_main_article2_section1_figure_img" src="./images/survey/bestpract.png" alt="HR Best Practices Survey">
                     </figure>
@@ -358,7 +362,7 @@
                     </div>
                 </section>
 
-                <section class="survey_main_article2_section1">
+                <section class="survey_main_article2_section1 swiper-slide">
                     <figure class="survey_main_article2_section1_figure" id="open_modal" >
                         <img class="survey_main_article2_section1_figure_img" src="./images/survey/benefitsociety.png" alt="Employee Compensation & Benefits Survey">
                     </figure>
@@ -398,7 +402,7 @@
                     </div>
                 </section>
 
-                <section class="survey_main_article2_section1">
+                <section class="survey_main_article2_section1 swiper-slide">
                     <figure class="survey_main_article2_section1_figure" id="open_modal" >
                         <img class="survey_main_article2_section1_figure_img" src="./images/survey/diversity.png" alt="Diversity & Inclusion Survey">
                     </figure>
@@ -438,7 +442,7 @@
                     </div>
                 </section>
 
-                <section class="survey_main_article2_section1">
+                <section class="survey_main_article2_section1 swiper-slide">
                     <figure class="survey_main_article2_section1_figure" id="open_modal" >
                         <img class="survey_main_article2_section1_figure_img" src="./images/survey/trends.png" alt="Labour Market Trends Survey">
                     </figure>
@@ -478,247 +482,9 @@
                     </div>
                 </section>
                 </div>
-                <div class="survey_main_article2_divcover">
-                    <section class="survey_main_article2_section1">
-                        <figure class="survey_main_article2_section1_figure" id="open_modal">
-                            <img class="survey_main_article2_section1_figure_img" src="./images/survey/HRTools.png" alt="HRTechnologySurvey">
-                        </figure>
-                        <h3 class="survey_main_article2_section1_h3">
-                            HR Technology Survey
-                        </h3>
-                        <div class="survey_main_article2_section1_h3_div1">
-                            <div class="survey_main_article2_section1_h3_div1_div1">
-                                <i class="fa fa-heart-o" id="survey_main_article2_section1_h3_div1_div1_icon" aria-hidden="true"></i>
-                                <span class="survey_main_article2_section1_h3_div1_div1_p">
-                                    300
-                                </span>
-                            </div>
-                            <div class="survey_main_article2_section1_h3_div1_div2">
-                                <i class="fa fa-pencil" id="survey_main_article2_section1_h3_div1_div2_icon" aria-hidden="true"></i>
-                                <span class="survey_main_article2_section1_h3_div1_div1_p">
-                                    1.2k responses
-                                </span>
-                            </div>
-                            <div class="survey_main_article2_section1_h3_div1_div2 special_anime">
-                                <i class="fa-solid fa-share" id="survey_main_article2_section1_h3_div1_div1_icon" aria-hidden="true"></i>
-                                <span class="survey_main_article2_section1_h3_div1_div1_p">
-                                    Share
-                                </span>
-                                <div class="container1">
-                                    <a href="https://wa.me/0799661152?text=Discover%20the%20ultimate%20Hr%20solution%20with%20ElevateHR%27s%20Participate%20in%20Surveys%20and%20be%20uptodate%20with%20current%20Hr%20trends." id="lin_link" target="_blank" rel="noopener noreferrer">
-                                        <i class="fab fa-whatsapp" id="fax"></i>
-                                    </a>
-                                    <a href="https://twitter.com/intent/tweet?url=https://elevatehr.co/survey.html&text=Discover%20the%20ultimate%20Hr%20solution%20with%20ElevateHR%27s%20Participate%20in%20Surveys%20and%20be%20uptodate%20with%20current%20Hr%20trends." id="lin_link" target="_blank" rel="noopener noreferrer">
-                                        <i class="fab fa-twitter" id="fax"></i>
-                                    </a>
-                                    <a href="http://www.facebook.com/sharer.php?u=https://elevatehr.co/survey.html" target="_blank" rel="noopener noreferrer" id="lin_link" >
-                                        <i class="fab fa-facebook-f" id="fax"></i>
-                                    </a>                                
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-    
-                    <section class="survey_main_article2_section1">
-                        <figure class="survey_main_article2_section1_figure" id="open_modal" >
-                            <img class="survey_main_article2_section1_figure_img" src="./images/survey/comply.png" alt="Compliance & Regulatory Survey">
-                        </figure>
-                        <h3 class="survey_main_article2_section1_h3">
-                            Compliance & Regulatory Survey
-                        </h3>
-                        <div class="survey_main_article2_section1_h3_div1">
-                            <div class="survey_main_article2_section1_h3_div1_div1">
-                                <i class="fa fa-heart-o" id="survey_main_article2_section1_h3_div1_div1_icon" aria-hidden="true"></i>
-                                <span class="survey_main_article2_section1_h3_div1_div1_p">
-                                    300
-                                </span>
-                            </div>
-                            <div class="survey_main_article2_section1_h3_div1_div2">
-                                <i class="fa fa-pencil" id="survey_main_article2_section1_h3_div1_div2_icon" aria-hidden="true"></i>
-                                <span class="survey_main_article2_section1_h3_div1_div1_p">
-                                    1.1k responses
-                                </span>
-                            </div>
-                            <div class="survey_main_article2_section1_h3_div1_div2 special_anime">
-                                <i class="fa-solid fa-share" id="survey_main_article2_section1_h3_div1_div1_icon" aria-hidden="true"></i>
-                                <span class="survey_main_article2_section1_h3_div1_div1_p">
-                                    Share
-                                </span>
-                                <div class="container1">
-                                    <a href="https://wa.me/0799661152?text=Discover%20the%20ultimate%20Hr%20solution%20with%20ElevateHR%27s%20Participate%20in%20Surveys%20and%20be%20uptodate%20with%20current%20Hr%20trends." id="lin_link" target="_blank" rel="noopener noreferrer">
-                                        <i class="fab fa-whatsapp" id="fax"></i>
-                                    </a>
-                                    <a href="https://twitter.com/intent/tweet?url=https://elevatehr.co/survey.html&text=Discover%20the%20ultimate%20Hr%20solution%20with%20ElevateHR%27s%20Participate%20in%20Surveys%20and%20be%20uptodate%20with%20current%20Hr%20trends." id="lin_link" target="_blank" rel="noopener noreferrer">
-                                        <i class="fab fa-twitter" id="fax"></i>
-                                    </a>
-                                    <a href="http://www.facebook.com/sharer.php?u=https://elevatehr.co/survey.html" target="_blank" rel="noopener noreferrer" id="lin_link" >
-                                        <i class="fab fa-facebook-f" id="fax"></i>
-                                    </a>                                
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-    
-                    <section class="survey_main_article2_section1">
-                        <figure class="survey_main_article2_section1_figure" id="open_modal" >
-                            <img class="survey_main_article2_section1_figure_img" src="./images/survey/bestpract.png" alt="HR Best Practices Survey">
-                        </figure>
-                        <h3 class="survey_main_article2_section1_h3">
-                            HR Best Practices Survey
-                        </h3>
-                        <div class="survey_main_article2_section1_h3_div1">
-                            <div class="survey_main_article2_section1_h3_div1_div1">
-                                <i class="fa fa-heart-o" id="survey_main_article2_section1_h3_div1_div1_icon" aria-hidden="true"></i>
-                                <span class="survey_main_article2_section1_h3_div1_div1_p">
-                                    200
-                                </span>
-                            </div>
-                            <div class="survey_main_article2_section1_h3_div1_div2">
-                                <i class="fa fa-pencil" id="survey_main_article2_section1_h3_div1_div2_icon" aria-hidden="true"></i>
-                                <span class="survey_main_article2_section1_h3_div1_div1_p">
-                                    1.0k responses
-                                </span>
-                            </div>
-                            <div class="survey_main_article2_section1_h3_div1_div2 special_anime">
-                                <i class="fa-solid fa-share" id="survey_main_article2_section1_h3_div1_div1_icon" aria-hidden="true"></i>
-                                <span class="survey_main_article2_section1_h3_div1_div1_p">
-                                    Share
-                                </span>
-                                <div class="container1">
-                                    <a href="https://wa.me/0799661152?text=Discover%20the%20ultimate%20Hr%20solution%20with%20ElevateHR%27s%20Participate%20in%20Surveys%20and%20be%20uptodate%20with%20current%20Hr%20trends." id="lin_link" target="_blank" rel="noopener noreferrer">
-                                        <i class="fab fa-whatsapp" id="fax"></i>
-                                    </a>
-                                    <a href="https://twitter.com/intent/tweet?url=https://elevatehr.co/survey.html&text=Discover%20the%20ultimate%20Hr%20solution%20with%20ElevateHR%27s%20Participate%20in%20Surveys%20and%20be%20uptodate%20with%20current%20Hr%20trends." id="lin_link" target="_blank" rel="noopener noreferrer">
-                                        <i class="fab fa-twitter" id="fax"></i>
-                                    </a>
-                                    <a href="http://www.facebook.com/sharer.php?u=https://elevatehr.co/survey.html" target="_blank" rel="noopener noreferrer" id="lin_link" >
-                                        <i class="fab fa-facebook-f" id="fax"></i>
-                                    </a>                                
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-    
-                    <section class="survey_main_article2_section1">
-                        <figure class="survey_main_article2_section1_figure" id="open_modal" >
-                            <img class="survey_main_article2_section1_figure_img" src="./images/survey/benefitsociety.png" alt="Employee Compensation & Benefits Survey">
-                        </figure>
-                        <h3 class="survey_main_article2_section1_h3">
-                            Employee Compensation & Benefits Survey
-                        </h3>
-                        <div class="survey_main_article2_section1_h3_div1">
-                            <div class="survey_main_article2_section1_h3_div1_div1">
-                                <i class="fa fa-heart-o" id="survey_main_article2_section1_h3_div1_div1_icon" aria-hidden="true"></i>
-                                <span class="survey_main_article2_section1_h3_div1_div1_p">
-                                    150
-                                </span>
-                            </div>
-                            <div class="survey_main_article2_section1_h3_div1_div2">
-                                <i class="fa fa-pencil" id="survey_main_article2_section1_h3_div1_div2_icon" aria-hidden="true"></i>
-                                <span class="survey_main_article2_section1_h3_div1_div1_p">
-                                    0.5k responses
-                                </span>
-                            </div>
-                            <div class="survey_main_article2_section1_h3_div1_div2 special_anime">
-                                <i class="fa-solid fa-share" id="survey_main_article2_section1_h3_div1_div1_icon" aria-hidden="true"></i>
-                                <span class="survey_main_article2_section1_h3_div1_div1_p">
-                                    Share
-                                </span>
-                                <div class="container1">
-                                    <a href="https://wa.me/0799661152?text=Discover%20the%20ultimate%20Hr%20solution%20with%20ElevateHR%27s%20Participate%20in%20Surveys%20and%20be%20uptodate%20with%20current%20Hr%20trends." id="lin_link" target="_blank" rel="noopener noreferrer">
-                                        <i class="fab fa-whatsapp" id="fax"></i>
-                                    </a>
-                                    <a href="https://twitter.com/intent/tweet?url=https://elevatehr.co/survey.html&text=Discover%20the%20ultimate%20Hr%20solution%20with%20ElevateHR%27s%20Participate%20in%20Surveys%20and%20be%20uptodate%20with%20current%20Hr%20trends." id="lin_link" target="_blank" rel="noopener noreferrer">
-                                        <i class="fab fa-twitter" id="fax"></i>
-                                    </a>
-                                    <a href="http://www.facebook.com/sharer.php?u=https://elevatehr.co/survey.html" target="_blank" rel="noopener noreferrer" id="lin_link" >
-                                        <i class="fab fa-facebook-f" id="fax"></i>
-                                    </a>                                
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-    
-                    <section class="survey_main_article2_section1">
-                        <figure class="survey_main_article2_section1_figure" id="open_modal" >
-                            <img class="survey_main_article2_section1_figure_img" src="./images/survey/diversity.png" alt="Diversity & Inclusion Survey">
-                        </figure>
-                        <h3 class="survey_main_article2_section1_h3">
-                            Diversity & Inclusion Survey
-                        </h3>
-                        <div class="survey_main_article2_section1_h3_div1">
-                            <div class="survey_main_article2_section1_h3_div1_div1">
-                                <i class="fa fa-heart-o" id="survey_main_article2_section1_h3_div1_div1_icon" aria-hidden="true"></i>
-                                <span class="survey_main_article2_section1_h3_div1_div1_p">
-                                    350
-                                </span>
-                            </div>
-                            <div class="survey_main_article2_section1_h3_div1_div2">
-                                <i class="fa fa-pencil" id="survey_main_article2_section1_h3_div1_div2_icon" aria-hidden="true"></i>
-                                <span class="survey_main_article2_section1_h3_div1_div1_p">
-                                    2.2k responses
-                                </span>
-                            </div>
-                            <div class="survey_main_article2_section1_h3_div1_div2 special_anime">
-                                <i class="fa-solid fa-share" id="survey_main_article2_section1_h3_div1_div1_icon" aria-hidden="true"></i>
-                                <span class="survey_main_article2_section1_h3_div1_div1_p">
-                                    Share
-                                </span>
-                                <div class="container1">
-                                    <a href="https://wa.me/0799661152?text=Discover%20the%20ultimate%20Hr%20solution%20with%20ElevateHR%27s%20Participate%20in%20Surveys%20and%20be%20uptodate%20with%20current%20Hr%20trends." id="lin_link" target="_blank" rel="noopener noreferrer">
-                                        <i class="fab fa-whatsapp" id="fax"></i>
-                                    </a>
-                                    <a href="https://twitter.com/intent/tweet?url=https://elevatehr.co/survey.html&text=Discover%20the%20ultimate%20Hr%20solution%20with%20ElevateHR%27s%20Participate%20in%20Surveys%20and%20be%20uptodate%20with%20current%20Hr%20trends." id="lin_link" target="_blank" rel="noopener noreferrer">
-                                        <i class="fab fa-twitter" id="fax"></i>
-                                    </a>
-                                    <a href="http://www.facebook.com/sharer.php?u=https://elevatehr.co/survey.html" target="_blank" rel="noopener noreferrer" id="lin_link" >
-                                        <i class="fab fa-facebook-f" id="fax"></i>
-                                    </a>                                
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-    
-                    <section class="survey_main_article2_section1">
-                        <figure class="survey_main_article2_section1_figure" id="open_modal" >
-                            <img class="survey_main_article2_section1_figure_img" src="./images/survey/trends.png" alt="Labour Market Trends Survey">
-                        </figure>
-                        <h3 class="survey_main_article2_section1_h3">
-                            Labour Market Trends Survey
-                        </h3>
-                        <div class="survey_main_article2_section1_h3_div1">
-                            <div class="survey_main_article2_section1_h3_div1_div1">
-                                <i class="fa fa-heart-o" id="survey_main_article2_section1_h3_div1_div1_icon" aria-hidden="true"></i>
-                                <span class="survey_main_article2_section1_h3_div1_div1_p">
-                                    141
-                                </span>
-                            </div>
-                            <div class="survey_main_article2_section1_h3_div1_div2">
-                                <i class="fa fa-pencil" id="survey_main_article2_section1_h3_div1_div2_icon" aria-hidden="true"></i>
-                                <span class="survey_main_article2_section1_h3_div1_div1_p">
-                                    1.8k responses
-                                </span>
-                            </div>
-                            <div class="survey_main_article2_section1_h3_div1_div2 special_anime">
-                                <i class="fa-solid fa-share" id="survey_main_article2_section1_h3_div1_div1_icon" aria-hidden="true"></i>
-                                <span class="survey_main_article2_section1_h3_div1_div1_p">
-                                   Share
-                                </span>
-                                <div class="container1">
-                                    <a href="https://wa.me/0799661152?text=Discover%20the%20ultimate%20Hr%20solution%20with%20ElevateHR%27s%20Participate%20in%20Surveys%20and%20be%20uptodate%20with%20current%20Hr%20trends." id="lin_link" target="_blank" rel="noopener noreferrer">
-                                        <i class="fab fa-whatsapp" id="fax"></i>
-                                    </a>
-                                    <a href="https://twitter.com/intent/tweet?url=https://elevatehr.co/survey.html&text=Discover%20the%20ultimate%20Hr%20solution%20with%20ElevateHR%27s%20Participate%20in%20Surveys%20and%20be%20uptodate%20with%20current%20Hr%20trends." id="lin_link" target="_blank" rel="noopener noreferrer">
-                                        <i class="fab fa-twitter" id="fax"></i>
-                                    </a>
-                                    <a href="http://www.facebook.com/sharer.php?u=https://elevatehr.co/survey.html" target="_blank" rel="noopener noreferrer" id="lin_link" >
-                                        <i class="fab fa-facebook-f" id="fax"></i>
-                                    </a>                                
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    </div>
+
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
             </article>
 
             <!-- take survey section -->
@@ -745,7 +511,7 @@
                                     Compliance & Regulatory Survey
                                 </h4>
                                 <p class="section_survey_dialog_div1_div_p">
-                                    23rd June 2023
+                                    Ongoing
                                 </p>
                             </div>
                             <button type="button" class="section_survey_dialog_div1_btn" >
@@ -920,7 +686,7 @@
             <article class="survey_section_three">
                 <section class="survey_section_three_section">
                     <h2 class="survey_section_three_section_h2">
-                        Participate and Get Reports
+                        Participate to Get Reports
                     </h2>
                     <p class="survey_section_three_section_p">
                         To show our appreciation for your survey participation, you will have the opportunity to access a copy of all reports from the surveys! 
@@ -945,7 +711,7 @@
                     </p>
                     <form class="article_section_four_section_form" id="update_form" >
                         <input type="text" class="article_section_four_section_form_input1" value="" name="lastname" id="firstname" placeholder="First Name"  required>
-                        <input type="text" class="article_section_four_section_form_input3" value="" name="firstname" id="lastname" placeholder="Second Name" required>
+                        <input type="text" class="article_section_four_section_form_input3" value="" name="firstname" id="lastname" placeholder=" Name" required>
                         <input type="email" class="article_section_four_section_form_input2" value="" name="email" id="email" placeholder="Email Address" required>
                         <button type="submit" id="update_of_reports" class="article_section_four_section_form_btn">SEND REPORTS</button>
                     </form>
@@ -1059,6 +825,20 @@
         <script src="js/purecounter.min.js"></script> <!-- Purecounter counter for statistics numbers -->
         <script src="js/replaceme.min.js"></script> <!-- ReplaceMe for rotating text -->
         <script src="js/scripts.js"></script> <!-- Custom scripts -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+        <!-- Initialize Swiper -->
+        <script>
+          var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 3,
+            spaceBetween: 10,
+            loop: true,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+          });
+        </script>
     </body>
 
 </html>
