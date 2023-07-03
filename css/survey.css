@@ -827,6 +827,16 @@ buttons take survey
   font-weight: 700;
 }
 
+.swiper, swiper-container  {
+  padding: 3rem 0rem !important;
+}
+
+@media (max-width: 576px) {
+  .survey_main_article2_section1 {
+    margin: 0% !important;
+  }
+}
+
 @media only screen and (min-width: 1440px) {
   .survey_main {
     max-width: 1440px;
