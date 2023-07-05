@@ -332,7 +332,7 @@
 .survey_main_article2 {
   display: flex;
   padding: 3rem 0rem;
-  width: 100%;
+  width: 80%;
   gap: 2rem;
   overflow: hidden;
   margin: 0 auto;
@@ -513,15 +513,15 @@ buttons take survey
   }
 
   .survey_main_article2_section1 {
-    width: 28rem !important;
-    height: 32rem !important;
+    width: 22rem !important;
+    height: 30rem !important;
   }
 }
 
 @media only screen and (min-width: 576px){
   .survey_main_article2_section1 {
-    width: 28rem !important;
-    height: 36rem !important;
+    width: 22rem !important;
+    height: 30rem !important;
   }
 }
 
@@ -533,8 +533,8 @@ buttons take survey
   }
 
   .survey_main_article2_section1 {
-    width: 31rem !important;
-    height: 38rem !important;
+    width: 22rem !important;
+    height: 30rem !important;
   }
 
   .section3_article_h2_section1_fig {
