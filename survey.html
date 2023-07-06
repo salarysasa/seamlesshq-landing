@@ -693,7 +693,7 @@
 
                         Participants will also be selected at random to join our panel discussions as we launch the reports. 
                     </p>
-                    <a href="https://airtable.com/shrv9m13XBA02lrd9" target="_blank"  class="survey_section_three_section_btn">
+                    <a href="#startsurvey" id="open_modal" class="survey_section_three_section_btn">
                         Start Survey ->
                     </a>
                 </section>                
@@ -801,7 +801,7 @@
                 )
                     .then((resp) => {
                         Toastify({
-                        text: "Succesfully submitted your request. Check your email for reports.",
+                        text: "Succesfully submitted your request.",
                         duration: 13000,
                         destination: "https://github.com/apvarun/toastify-js",
                         newWindow: true,
@@ -815,6 +815,11 @@
                         onClick: function(){} // Callback after click
                         }).showToast();
                         thisform.reset();
+                        window.open(
+                            "https://airtable.com/shrv9m13XBA02lrd9",
+                            '_blank',
+                            'noreferrer'
+                        )
                     }).catch(err => err).finally(() => {
                         btn_update.disabled=true
                     });
