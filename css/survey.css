@@ -1082,7 +1082,7 @@ buttons take survey
   color: #fff;
 }
 
-@media (min-width: 1330px) {
+@media (min-width: 1280px) {
   .swiper-button-next {
     display: none !important;
   }
