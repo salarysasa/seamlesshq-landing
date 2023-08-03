@@ -36,8 +36,8 @@
 
 .survey_main_article_section_h2,
 .survey_main_article_section2_div1_h2 {
-  font-size: 4rem;
-  line-height: 4.125rem;
+  font-size: 2.75rem;
+  line-height: 3.625rem;
   color: #FF800B;
   font-weight: 700;
   font-family: 'DM Sans', sans-serif;
@@ -45,7 +45,7 @@
 
 .survey_main_article_section_h2 > span,
 .survey_main_article_section2_div1_h2 > span {
-  color: #000;
+  color: #422F59;
   font-family: 'DM Sans', sans-serif;
 }
 
@@ -81,7 +81,7 @@
 
 .survey_main_article_section_p,
 .survey_main_article_section2_div1_p {
-  font-size: 1.25rem;
+  font-size: 1rem;
   line-height: 1.75rem;
   font-weight: 400;
   color: rgb(86, 85, 120);  
@@ -104,11 +104,13 @@
 
 .survey_main_article_section_form_button,
 .survey_main_article_section2_div1_form_button {
-  padding: 0.5rem 1.873rem 0.5rem 1.875rem;
+  /* padding: 0.5rem 1.873rem 0.5rem 1.875rem; */
+  padding: 1.625rem 2.625rem 1.625rem 2.625rem;
   background-color: #FF800B;
   color: #fff;
   font-family: 'DM Sans', sans-serif;
-  border-radius: 0.25rem;
+  /* border-radius: 0.25rem; */
+  border-radius: 3px;
   border: none;
   font-size: 1.25rem;
   text-decoration: none;
@@ -121,9 +123,13 @@
 
 .survey_main_article_section_form_button:hover,
 .survey_main_article_section2_div1_form_button:hover {
-  text-decoration: none;
+  /* text-decoration: none;
   color: #fff;
-  background-color: #d16909;
+  background-color: #d16909; */
+  background-color: transparent;
+  color: #272556;
+  text-decoration: none;
+  border: 1px solid #FF800B;
 }
 
 .survey_main_article_section_form_input::placeholder,
@@ -179,7 +185,7 @@
 
   .survey_main_article_section_h2,
   .survey_main_article_section2_div1_h2 {
-    font-size: 3rem;
+    font-size: 2.75rem;
     line-height: 3.125rem;
   }
 
@@ -207,7 +213,7 @@
 @media only screen and (min-width:1024px) {
   .survey_main_article_section_h2,
   .survey_main_article_section2_div1_h2 {
-    font-size: 3rem;
+    font-size: 2.75rem;
     line-height: 3.125rem;
     text-align: left;
     padding-bottom: 0.5rem;
@@ -242,7 +248,7 @@
 @media only screen and (min-width:1280px) {
   .survey_main_article_section_h2,
   .survey_main_article_section2_div1_h2 {
-    font-size: 3rem;
+    font-size: 2.75rem;
     line-height: 3.125rem;
   }
 
@@ -846,13 +852,13 @@ buttons take survey
   }
 
   .survey_main_article_section_h2 {
-    font-size: 4.125rem;
-    line-height: 4.125rem;
+    font-size: 2.75rem;
+    line-height: 3..625rem;
   }
 
   .survey_main_article_section_h2 > span {
-    font-size: 4rem;
-    line-height: 4.25rem;
+    font-size: 2.75rem;
+    line-height: 3.625rem;
   }
 
   .survey_main_article_section2_div1_p,
