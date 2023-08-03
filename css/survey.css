@@ -1081,3 +1081,9 @@ buttons take survey
   text-decoration: none;
   color: #fff;
 }
+
+@media (min-width: 1330px) {
+  .swiper-button-next {
+    display: none !important;
+  }
+}
