@@ -359,12 +359,12 @@
 }
 
 .survey_main_article2_section1 {
-  display: flex;
+  display: flex !important;
   flex-direction: column;
   padding: 1rem;
   justify-content: space-between;
   align-items: baseline;
-  gap: 1rem;
+  /* gap: 1rem; */
   width: 20rem !important;
   height: 27rem !important;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
@@ -539,7 +539,7 @@ buttons take survey
   }
 
   .survey_main_article2_section1 {
-    width: 22rem !important;
+    width: 15rem !important;
     height: 30rem !important;
   }
 

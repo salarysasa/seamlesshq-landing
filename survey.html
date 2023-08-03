@@ -225,9 +225,11 @@
                 <span id="close_video">
                     &times;
                 </span>
-                <video class="survey_main_article_section_video survey_main_article_section_video_secon" id="source_video" poster="./images/survey/faith.png" controls>
+                <!-- <video class="survey_main_article_section_video survey_main_article_section_video_secon" id="source_video" poster="./images/survey/faith.png" controls>
                     <source src="./images/survey/Survey Pitch.mp4" type="video/mp4">
-                </video>
+                </video> -->
+                <iframe title="survey video" class="survey_main_article_section_video survey_main_article_section_video_secon" id="source_video" src="https://player.vimeo.com/video/835787268?h=0946c14e16"  fullscreen; "picture-in-picture" allowfullscreen></iframe>
+
             </dialog>
             <section class="survey_survey_content_section">
                 <h2 class="survey_survey_content_section_h2" >
@@ -840,6 +842,13 @@
             centeredSlides: true,
             spaceBetween: 30,
             loop: true,
+            grabCursor: false,
+            breakpoints: {
+            '@1.50': {
+            slidesPerView: 6,
+            spaceBetween: 0,
+            },
+            },
             navigation: {
                 nextEl: ".swiper-button-next",
                 prevEl: ".swiper-button-prev",
