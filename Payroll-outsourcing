@@ -106,7 +106,9 @@
                     </ul>
                     <ul class="navbar-nav ms-auto navbar-nav-scroll gap-2" >
                         <li class="nav-item">
+
                             <a class="btn btn-outline-warning page-scroll button-links" target="_blank" href="https://airtable.com/app2koUbaYEslfQFE/shrHXx2IOYIPpPvwp">Invest</a>
+
                         </li>
                         <li class="nav-item">
                             <a class="btn btn-warning btn-small page-scroll button-links2" target="_blank" href="https://app.elevateHR.co/login">Request a Demo</a>
@@ -131,7 +133,7 @@
                     We process payroll for you, so you can focus on running your business.
                 </p>
                 <button class="outsourcing_container_section_one_subsection_one_button" type="button">
-                    <a href="request-demo" class="butousorce" > Get started today </a>
+                    <a href="https://airtable.com/appolPw2eM5Aeo1MB/shrdCx2mXk0wV0d72" class="butousorce" > Get started today </a>
                 </button>
                 <div class="outsourcing_container_section_one_clients">
                     <p class="outsourcing_container_section_one_clients_p">
@@ -399,7 +401,7 @@
                             We make payroll processing easy and affordable
                         </h3>
                         <button class="outsourcing_container_section_six_button" type="button">
-                            <a href="request-demo" class="butousorce" > Get Started</a>
+                            <a href="https://airtable.com/appolPw2eM5Aeo1MB/shrdCx2mXk0wV0d72" class="butousorce" > Get Started</a>
                         </button>
                     </section>
                 <!-- end of section six -->
