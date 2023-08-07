@@ -1,4 +1,10 @@
+/* main styling */
+#outsourcing_main {
+    max-width: 1330px;
+    margin: auto;
+}
 /* section one styling */
+
 .outsourcing_container_section_one {
     background: #FAF7FD;
     display: flex;
@@ -17,22 +23,19 @@
 
 .outsourcing_container_section_one_subsection_one_h2 {
     color: #422F59 !important;
-    font-family: 'Dm Sans';
+    font-family: 'Dm Sans', sans-serif;
     font-weight: 400;
-    font-size: xx-large;
+    font-size: 2.5rem;
+    line-height: 3.625rem;
     margin-bottom: 0.2rem;
-    line-height: 1;
 }
 
 .outsourcing_container_section_one_subsection_one_p,
 .outsourcing_container_section_one_clients_p,
 .outsourcing_container_section_five_p {
     color: #565578;
-    font-family: 'Dm Sans';
-    font-weight: 400;
-    line-height: 1.2;
     width: 90%;
-    font-size: 1.5rem;
+    font: 400 1rem/1.625rem "DM Sans", sans-serif;
 }
 
 .outsourcing_container_section_one_subsection_one_button,
@@ -96,7 +99,7 @@
 }
 
 .outsourcing_container_section_one_clients_p {
-    font-size: small;
+    font: 400 1rem/1.625rem "DM Sans", sans-serif;
 }
 
 /* end of section one */
@@ -129,14 +132,13 @@
 
 .outsourcing_container_section_two_subsection_two_h4 {
     font-weight: 500;
-    font-size: larger;
+    font-size: 2rem;
+    line-height: 3.25rem;
     color: #422F59 !important;
-    line-height: 1.2;
 }
 
 .outsourcing_container_section_two_subsection_two_p {
-    font-size: 1.5rem;
-    font-weight: 400;
+    font: 400 1rem/1.625rem "DM Sans", sans-serif;
 }
 
 /* end of section two styling */
@@ -208,8 +210,7 @@
 }
 
 .outsourcing_container_section_four_p {
-    font-size: medium;
-    font-weight: 400;
+    font: 400 1rem/1.625rem "DM Sans", sans-serif;
     color: #FF800B;
 }
 
@@ -250,8 +251,7 @@
 
 .outsourcing_container_section_four_subsection_div_p {
     line-height: 1.2;
-    font-size: 1.1rem;
-    font-weight: 400;
+    font: 400 1rem/1.625rem "DM Sans", sans-serif;
     color: #565578;
 }
 /* end of section four styling */
@@ -275,7 +275,7 @@
 
 .outsourcing_container_section_five_p {
     text-align: center;
-    font-size: smaller;
+    font: 400 1rem/1.625rem "DM Sans", sans-serif;
 }
 
 .outsourcing_container_section_five_fig_img {
@@ -367,7 +367,7 @@
     .outsourcing_container_section_three_subsection_two_first_div_p,
     .outsourcing_container_section_four_p
     .outsourcing_container_section_five_p {
-        font-size: 1.125rem;
+        font: 400 1rem/1.625rem "DM Sans", sans-serif;
     }
 
     .outsourcing_container_section_five_p {
@@ -412,10 +412,6 @@
         gap: 0.2rem;
     }
 
-    .outsourcing_container_section_one_subsection_one_h2 {
-        font-size: 40px;
-    }
-
     .outsourcing_container_section_two_subsection_two {
         align-items: baseline;
     }
@@ -424,13 +420,14 @@
     .outsourcing_container_section_three_h3,
     .outsourcing_container_section_four_h3,
     .outsourcing_container_section_six_h3 {
-        font-size: x-large;
+        font-size: 2rem;
+        line-height: 3.1rem;  
     }
 
     .outsourcing_container_section_two_subsection_two_p,
     .outsourcing_container_section_three_subsection_two_first_div_p
     .outsourcing_container_section_five_p {
-        font-size: 1.5rem;
+        font: 400 1rem/1.625rem "DM Sans", sans-serif;
     }
 
     .outsourcing_container_section_five_fig {
@@ -450,7 +447,7 @@
     }
 
     .outsourcing_container_section_five_p {
-        font-size: large;
+        font: 400 1rem/1.625rem "DM Sans", sans-serif;
         width: 60%;
     }
 }
