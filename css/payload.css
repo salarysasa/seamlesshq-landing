@@ -1,4 +1,7 @@
-
+#main-body {
+    max-width: 1330px;
+    margin: auto;
+}
 /* section one styling */
 .payroll_container_section_one {
     background: #FAF7FD;
@@ -19,20 +22,17 @@
 .payroll_container_section_one_subsection_one_h2,
 .payroll_container_section_two_h3_tag {
     color: #422F59;
-    font-family: 'Dm Sans';
+    font-family: 'Dm Sans', sans-serif;
     font-weight: 400;
-    font-size: xx-large;
+    font-size: 2.5rem;
+    line-height: 3.25rem;
     margin-bottom: 0.2rem;
-    line-height: 1;
 }
 
 .payroll_container_section_one_subsection_one_p,
 .payroll_container_section_two_p_tag {
     color: #565578;
-    font-family: 'Dm Sans';
-    font-weight: 400;
-    line-height: 1.2;
-    font-size: 1.5rem;
+    font: 400 1rem/1.625rem "DM Sans", sans-serif;
 }
 
 .payroll_container_section_one_subsection_one_button {
@@ -151,7 +151,8 @@
 .payroll_container_section_three_subsection_holder_div_h4 {
     color: #422F59;
     font-weight: 500;
-    font-size: 1.75rem;
+    font-size: 2rem;
+    line-height: 3.25rem;
 }
 
 .payroll_container_section_three_subsection_holder_div_div_h5 {
@@ -160,8 +161,7 @@
 }
 
 .payroll_container_section_three_subsection_holder_div_div_p {
-    font-weight: 400;
-    font-size: 1.125rem;
+    font: 400 1rem/1.625rem "DM Sans", sans-serif;
     line-height: 1.2;
 }
 
@@ -271,8 +271,8 @@
 .payroll_container_section_five_h4 {
     color: #422F59;
     font-weight: 400;
-    font-size: 1.5rem;
-    line-height: 1.2;
+    line-height: 3.25rem;
+    font-size: 2rem;
 }
 
 .payroll_container_section_five_div {
