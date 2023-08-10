@@ -191,7 +191,7 @@
 
   .survey_main_article_section_p,
   .survey_main_article_section2_div1_p {
-    font-size: 1.25rem;
+    font-size: 1rem;
     line-height: 1.75rem;
     font-weight: 400;
     color: rgb(86, 85, 120);
@@ -221,7 +221,7 @@
 
   .survey_main_article_section_p,
   .survey_main_article_section2_div1_p {
-    font-size: 1.25rem;
+    font-size: 1rem;
     line-height: 1.75rem;
     font-weight: 400;
     color: rgb(86, 85, 120);
@@ -254,7 +254,7 @@
 
   .survey_main_article_section_p,
   .survey_main_article_section2_div1_p {
-    font-size: 1.5rem;
+    font-size: 1rem;
     line-height: 1.75rem;
     font-weight: 400;
     color: rgb(86, 85, 120);
@@ -362,6 +362,7 @@
   display: flex !important;
   flex-direction: column;
   padding: 1rem;
+  cursor: pointer;
   justify-content: space-between;
   align-items: baseline;
   /* gap: 1rem; */
@@ -505,7 +506,7 @@ buttons take survey
 }
 
 .section3_article_h2_section1_ul > li {
-  font-size: 1.25rem;
+  font-size: 1rem;
   line-height: 1.875rem;
   font-weight: 400;
   font-family: 'DM Sans', sans-serif;
@@ -554,7 +555,7 @@ buttons take survey
   }
 
   .section3_article_h2_section1_ul > li {
-    font-size: 1.25rem;
+    font-size: 1rem;
   }
 
   .section3_article_h2_section1_fig {
@@ -593,7 +594,7 @@ buttons take survey
 }
 
 .survey_section_three_section_p {
-  font-size: 1.125rem;
+  font-size: 1rem;
   line-height: 2rem;
   font-weight: 400;
   font-family: 'DM Sans', sans-serif;
@@ -661,7 +662,7 @@ buttons take survey
 
 .article_section_four_section_p {
   font-weight: 400;
-  font-size: 1.125rem;
+  font-size: 1rem;
   line-height: 1.625rem;
   color: #422f59;
   font-family: 'DM Sans', sans-serif;
@@ -866,7 +867,7 @@ buttons take survey
   .shar_button_section_btn1,
   .survey_main_article_section2_figure_div_h3,
   .survey_main_article_section2_figure_div_p {
-    font-size: 1.25rem;
+    font-size: 1rem;
     line-height: 1.75rem;
   }
 
@@ -877,7 +878,7 @@ buttons take survey
   .section3_article_h2_section1_ul > li,
   .survey_section_three_section_p,
   .article_section_four_section_p {
-    font-size: 1.25rem;
+    font-size: 1rem;
   }
   
 }
@@ -945,7 +946,7 @@ buttons take survey
 
 .survey_survey_content_section_p {
   text-align: left;
-  font-size: 1.25rem;
+  font-size: 1rem;
   width: 90%;
 }
 
