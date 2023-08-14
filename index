@@ -118,7 +118,7 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link links" target="_blank" href="survey.html">Market Reports</a>
+                        <a class="nav-link links" href="survey.html">Market Reports</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link links" target="_blank" href="https://podcasts.elevatehr.co">Our Story</a>
@@ -131,7 +131,8 @@
                     </li>
                     <li class="nav-item">
                         <a class="btn btn-warning btn-small page-scroll button-links2" target="_blank"
-                            href="https://airtable.com/appolPw2eM5Aeo1MB/shrdCx2mXk0wV0d72">Request a Demo</a>
+
+                            href="https://airtable.com/appolPw2eM5Aeo1MB/shrdCx2mXk0wV0d72">Request Trial</a>
                     </li>
                     <li class="nav-item">
                         <a class="btn btn-light btn-small page-scroll button-links3" target="_blank"
@@ -157,7 +158,9 @@
                         </h1>
 
                         <p class="desc">ElevateHR lets you effortlessly onboard & manage your employees’ payroll</p>
-                        <a class="btn-solid-lg" href="https://airtable.com/appolPw2eM5Aeo1MB/shrdCx2mXk0wV0d72">Request a Demo</a>
+
+                        <a class="btn-solid-lg" href="https://airtable.com/appolPw2eM5Aeo1MB/shrdCx2mXk0wV0d72">Request Trial</a>
+
                     </div> <!-- end of text-container -->
                 </div> <!-- end of col -->
                 <div class="col-lg-7">

@@ -128,7 +128,7 @@
                         </li>
                         <li class="nav-item">
                             <a class="btn btn-warning btn-small page-scroll button-links2" target="_blank"
-                                href="request-demo">Request a Demo</a>
+                                href="request-demo">Request Trial</a>
                         </li>
                         <li class="nav-item">
                             <a class="btn btn-light btn-small page-scroll button-links3" target="_blank"
@@ -153,7 +153,7 @@
                     Business Owners in Mind. Automate your payroll today!
                 </p>
                 <button class="payroll_container_section_one_subsection_one_button" type="button">
-                    <a href="request-demo" class="button_a"> Request a Demo </a>
+                    <a href="request-demo" class="button_a">Request Trial</a>
                 </button>
             </section>
             <figure class="payroll_container_section_one_subsection_two">
@@ -336,7 +336,7 @@
                         </p>
                     </div>
                     <button class="payroll_container_section_three_subsection_holder_div_button" type="button">
-                        <a href="request-demo" class="button_a"> Request a Demo </a>
+                        <a href="request-demo" class="button_a">Request Trial</a>
                     </button>
                 </div>
                 <figure class="payroll_container_section_three_subsection_figure">
@@ -404,7 +404,7 @@
                         </p>
                     </div>
                     <button class="payroll_container_section_three_subsection_holder_div_button" type="button">
-                        <a href="request-demo" class="button_a"> Request a Demo </a>
+                        <a href="request-demo" class="button_a">Request Trial</a>
                     </button>
                 </div>
 
@@ -447,7 +447,7 @@
                         </p>
                     </div>
                     <button class="payroll_container_section_three_subsection_holder_div_button" type="button">
-                        <a href="request-demo" class="button_a"> Request a Demo </a>
+                        <a href="request-demo" class="button_a">Request Trial</a>
                     </button>
                 </div>
                 <figure class="payroll_container_section_three_subsection_figure">
@@ -479,7 +479,7 @@
                     processing
                     of employee salaries, benefits, and improved compliance.
                     <br>
-                    If you're a HR or Accountant looking for a reliable payroll solution, request a demo of ElevateHR's
+                    If you're a HR or Accountant looking for a reliable payroll solution, Request Trial of ElevateHR's
                     system today.
                 </p>
                 <div class="payroll_container_subsection_div_divs">
@@ -508,7 +508,7 @@
                 </button>
                 <button class="payroll_container_section_five_div_btn_2" type="button">
 
-                    <a href="request-demo" class="button_a"> Request a Demo </a>
+                    <a href="request-demo" class="button_a">Request Trial</a>
                 </button>
             </div>
         </section>
@@ -633,7 +633,7 @@
                 accuracy. <br><br>
                 ElevateHR provides you with a user friendly payroll system that has pre calculated formulas to ensure
                 statutory compliance <br><br>
-                <a href="request-demo class=" button_a"">Request a demo</a> session now to get started!
+                <a href="request-demo class=" button_a"">Request Trial</a> session now to get started!
             </div>
         </section>
         <!-- end of faq -->
