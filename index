@@ -131,7 +131,7 @@
                     </li>
                     <li class="nav-item">
                         <a class="btn btn-warning btn-small page-scroll button-links2" target="_blank"
-                            href="request-demo">Request a Demo</a>
+                            href="request-demo">Request Trial</a>
                     </li>
                     <li class="nav-item">
                         <a class="btn btn-light btn-small page-scroll button-links3" target="_blank"
@@ -157,7 +157,7 @@
                         </h1>
 
                         <p class="desc">ElevateHR lets you effortlessly onboard & manage your employees’ payroll</p>
-                        <a class="btn-solid-lg" href="request-demo">Request a Demo</a>
+                        <a class="btn-solid-lg" href="request-demo">Request Trial</a>
                     </div> <!-- end of text-container -->
                 </div> <!-- end of col -->
                 <div class="col-lg-7">
